@@ -42,8 +42,8 @@ body {
     fill: currentColor;
     color: white;
     padding: 10px;
-    
     height: 15px;
+    
 }
 
 
@@ -71,7 +71,7 @@ body {
 #total_cart {
     color: red;
     position: relative;
-    right: 85px;
+    right: 92px;
     bottom: 20px;
 }
 
@@ -87,7 +87,7 @@ body {
 }
 
 #heart {
-    right: 65px;
+    right: 60px;
 }
 
 svg {
@@ -95,7 +95,7 @@ svg {
 }
 
 #cart_nav {
-    right: 70px;
+    right: 76px;
 }
 
 nav>hr {
@@ -103,7 +103,7 @@ nav>hr {
 }
 
 #top_hr {
-    margin-bottom: 20px;
+    margin-top: -10px;
 }
 
 #top_bar {
@@ -153,7 +153,7 @@ color: black;
 #search_input {
 
     position: relative;
-    width: 625px;
+    width: 525px;
     margin: auto;
     height: 40px;
     bottom: 38px;
@@ -166,7 +166,7 @@ color: black;
 #search_input>input {
     border: 1px solid rgba(0, 0, 0, 0.267);
 
-    width: 95%;
+    width: 90%;
     height: 30px;
     position: relative;
     bottom: 10px;
@@ -278,7 +278,7 @@ color: black;
     position: absolute;
     background: white;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid rgba(0, 0, 0, 0.137);
     z-index: 1;
   }
   
@@ -296,6 +296,27 @@ color: black;
   /* Show the dropdown menu on hover */
   .dropdown-acc:hover .dropdown-content-acc {display: block;}
   
+#lock_btn{
+   background-color: transparent;
+    border: none;
+    position: relative;
+    bottom: 77px;
+    width: 80px;
+    font-size: 10px;
+    border-radius: 5px;
+    left: 1060px;
+    height: 30px;
+    
+}
+
+
+#checkout_nav{
+    display: inline-block;
+    position: relative;
+    left: 1070px;
+    border: 1px solid red;
+    top: 55px;
+}
 
 
 
