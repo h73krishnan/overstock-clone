@@ -1,0 +1,428 @@
+body {
+    font-family: sans-serif;
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid green;
+    margin: auto;
+    
+}
+
+
+#navbar>svg {
+    display: inline-block;
+}
+
+#logo_navbar {
+    position: relative;
+
+
+}
+
+#logo_cart_navbar {
+    position: relative;
+    margin: 10px;
+    left: 20px;
+    bottom: 10px;
+    height: 35px;
+    width: 35px;
+
+}
+
+#logo_heart_navbar {
+    position: relative;
+    left: 20px;
+
+
+
+}
+
+#logo_search_navbar{
+    position: relative;
+    background: red;
+    fill: currentColor;
+    color: white;
+    padding: 10px;
+    
+    height: 15px;
+}
+
+
+
+
+
+#navbar>svg {
+    cursor: pointer;
+}
+
+#logo_person_navbar {
+    position: relative;
+    left: 20px;
+
+}
+
+#nav_div {
+    display: flex;
+
+    float: right;
+    width: 200px;
+    height: 50px;
+}
+
+#total_cart {
+    color: red;
+    position: relative;
+    right: 36px;
+    bottom: 20px;
+}
+
+.nav_text {
+    font-size: 13px;
+    position: relative;
+    top: 10px;
+
+}
+
+#account {
+    right: 15px;
+}
+
+#heart {
+    right: 3px;
+}
+
+svg {
+    cursor: pointer;
+}
+
+#cart_nav {
+    right: 20px;
+}
+
+nav>hr {
+    margin-top: 20px;
+}
+
+#top_hr {
+    margin-bottom: 20px;
+}
+
+#top_bar {
+    display: inline-flexbox;
+
+    margin: 1px;
+    margin-top: -20px;
+    font-weight: lighter;
+    font-size: small;
+    color: rgba(0, 0, 0, 0.664);
+    margin-bottom: -10px;
+    background: rgba(0, 0, 0, 0.055);
+}
+
+#india_logo {
+    height: 25px;
+    border-radius: 50%;
+    margin-bottom: -5px;
+    cursor: pointer;
+}
+
+#searchbar {
+    position: absolute;
+    border: none;
+    text-decoration: none;
+    
+    background: rgba(0, 0, 0, 0.055);
+}
+
+#navigate {
+
+    display: flex;
+    gap: 20px;
+color: black;
+    width: 1140px;
+    margin: auto;
+
+}
+
+#navigate>button {
+    padding: 5px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.753);
+}
+
+#search_input {
+
+    position: relative;
+    width: 625px;
+    margin: auto;
+    height: 40px;
+    bottom: 38px;
+    justify-items: center;
+    font-size: 40px;
+
+
+}
+
+#search_input>input {
+    border: 1px solid rgba(0, 0, 0, 0.267);
+
+    width: 95%;
+    height: 30px;
+    position: relative;
+    bottom: 10px;
+    font-size: 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    background: rgba(167, 167, 167, 0.055);
+    padding-left: 10px;
+}
+
+
+
+
+.btn_hover:hover {
+    text-decoration: underline;
+
+}
+
+.p_1{
+    
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.733);
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.home{
+    display: flex;
+ 
+    width: 1100px;
+    margin: auto;
+}
+
+#box1{
+ 
+    padding: 20px;
+}
+
+#box1 > img{
+    width: 275px;
+    margin: auto ;
+    margin-bottom: 15px;
+}
+
+
+
+
+#box1 > h3{
+    
+    width: 260px;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+#box1 > p{
+ 
+    width: 250px;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 23px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+#locate_drop{
+ 
+    width: 250px;
+}
+
+#cross_box{
+    height: 10px;
+}
+
+#btn_svgcross{
+    height: 40px;
+    border-radius: 50px;
+    font-size: 18px;
+    background: white;
+    margin-top: -40px;
+}
+
+#btn_svgcross:hover{
+   background: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #ffffff;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .btn_price{
+      background: white;
+      border-radius: 5px;
+      font-size: 15px;
+      padding: 8px;
+      margin: 5px;
+      border: 1px solid rgb(99, 99, 99);
+      cursor: text;
+  }
+
+  .apply{
+      width: 100%;
+      font-size: 15px;
+      padding: 8px;
+      border-radius: 5px;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+  }
+
+#dropdown3 > button{
+     border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+
