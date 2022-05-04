@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
-     <!-- starting Of Navbar ------------------------------------>
-     <div id="top_bar">
+    <!-- starting Of Navbar ------------------------------------>
+    <div id="top_bar">
         <p>
             Ships to: <img src="https://ak1.ostkcdn.com/img/mxc/intFlag_IN.gif" alt="" id="india_logo"> <b>India</b>
         </p>
     </div>
 
-    <hr id="top_hr">
-
+    <hr id="top_hr" style="margin-bottom: -20px;">
+<p class="nav_text" id="checkout_nav">Check Out</p>
 
     <nav id="navbar">
         <svg id="logo_navbar" height="32" width="181" color="#FF1F2C" viewBox="0 0 164 29">
@@ -53,7 +53,11 @@
                     stroke-linejoin="round"></path>
 
             </svg>
+
             <p class="nav_text" id="account">Account</p>
+
+
+
 
             <svg id="logo_heart_navbar" class="UserDropDowns_icon_06" width="22" height="22" viewBox="0 0 24 24"
                 stroke="#2F3337" fill="#2F3337">
@@ -62,7 +66,11 @@
                     fill="none" stroke="inherit" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
                     stroke-linejoin="round"></path>
             </svg>
+
             <p class="nav_text" id="heart">Lists</p>
+
+
+
 
             <svg id="logo_cart_navbar">
                 <path fill-rule="evenodd" clip-rule="evenodd"
@@ -82,9 +90,21 @@
                     stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
         </div>
+        
+            <button id="lock_btn"><svg stroke-width="0" class="Checkout_lockSVG_27" width="24" height="24" viewBox="0 0 29 29"
+                stroke="#2F3337" fill="#2F3337">
+                <title>Lock</title>
+                <path
+                    d="M12 1a4.95 4.95 0 00-5 5v3h10V6a4.95 4.95 0 00-5-5zM19 9H5a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V11a2 2 0 00-2-2z"
+                    stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                <path d="M12 17a2 2 0 100-4 2 2 0 000 4zM12 17v2" stroke="inherit" fill="none" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg></button>
+            
+            
 
-
-        <hr style="margin-bottom: -0px; margin-top: -20px;">
+        <hr style="margin-bottom: -0px; margin-top: -40px;">
 
         <div id="navigate">
             <button class="btn_hover">Furniture</button>
@@ -103,14 +123,47 @@
 
         </div>
 
+        <div class="dropdown-acc">
+            <button class="dropbtn-acc"
+                style="background-color: white;  position: relative; bottom: 85px ; height: 50px ; background-color: transparent; left: 890px; "></button>
+            <div class="dropdown-content-acc" style=" position: fixed; bottom: 370px ; left: 820px; margin-top: 10px;">
+                <a href="#">My Account</a>
+                <a href="#">My Orders</a>
+                <a href="#">My Reviews</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Help</a>
+                <a href="#">
+                    <hr>
+                </a>
+                <a href="#">Sign Out</a>
+            </div>
+        </div>
 
-<hr style="margin-top: -0px;">
+
+        <div class="dropdown-acc">
+            <button class="dropbtn-acc"
+                style="background-color: white;  position: relative; bottom: 90px ; height: 50px ; background-color: transparent; left: 910px; "></button>
+            <div class="dropdown-content-acc" style=" position: fixed; bottom: 455px ; left: 900px; margin-top: 10px;">
+                <a href="#">Favoraties</a>
+                <a href="#">Save For Later</a>
+                <a href="#">
+                    <hr>
+                </a>
+                <a href="#">View All My Lists</a>
+                <a href="#">Find a List</a>
+            </div>
+        </div>
+
     </nav>
 
 
 
 
+
+    <hr style="margin-top: -40px; ">
+
     <!-- End of navbar ---------------------------------------->
+
 
 
 </body>
