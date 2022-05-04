@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="test.css" >
+</head>
+<body>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <!-- <div class="numbertext">1 / 3</div> -->
+    <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/3d9e499a4f8dde22744c473fb2194cb941cb3557/Sealy-Lacey-13-inch-Hybrid-Mattress.jpg?imwidth=480&impolicy=medium" >
+    <a href="bed.html">
+    <div class="text" style="color:black">Shop now</div>
+    </a>
+  </div>
+
+  <a href="chair.html">
+    <div class="mySlides fade">
+      <!-- <div class="numbertext">3 / 3</div> -->
+      <img src="https://ak1.ostkcdn.com/images/products/17362041/Christopher-Knight-Home-Calliope-Buttoned-Fabric-2-Seat-Recliner-Club-Chair-33b87de2-c8b5-4df5-80a5-a299ead9e715_1000.jpg?imwidth=480&impolicy=medium"> 
+      <div class="text">Shop now</div>
+    </div>
+  </a>
+  <div class="mySlides fade">
+    <!-- <div class="numbertext">2 / 3</div> -->
+    <img src="https://ak1.ostkcdn.com/images/products/is/images/direct/9c5e5463ee0d941377f3128366427788cd2a16be/SAFAVIEH-Courtyard-Jeri-Indoor--Outdoor-Patio-Backyard-Rug.jpg?imwidth=480&impolicy=medium" > 
+    <div class="text">Shop now</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<!-- <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div> -->
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+//   console.log(slides);
+  let dots = document.getElementsByClassName("dot");
+  // console.log(dots);
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+</body>
+</html> 
