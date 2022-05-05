@@ -1,3 +1,6 @@
+
+@media only screen and (min-width: 801px) {
+
 body {
     font-family: sans-serif;
 
@@ -377,21 +380,390 @@ nav>hr {
 }
 
 
+}
 
+@media only screen and (max-width: 800px) and (min-width: 401px){
 
-@media only screen and (max-width: 800px) {
+    
 
     body {
         font-family: sans-serif;
-
-        
-        
-
-        
-
+    
+        width: 100%;
+    
+        margin: auto;
+    
     }
-
-   
+    
+    
+    #navbar>svg {
+        display: inline-block;
+    }
+    
+    #logo_navbar {
+        position: relative;
+    
+    
+    }
+    
+    #logo_cart_navbar {
+        position: relative;
+        margin: 10px;
+        right: 35px;
+        bottom: 10px;
+        height: 35px;
+        width: 35px;
+    
+    }
+    
+    #logo_heart_navbar {
+        position: relative;
+        right: 35px;
+    
+    
+    
+    }
+    
+    #logo_search_navbar {
+        position: relative;
+        background: red;
+        fill: currentColor;
+        color: white;
+        padding: 10px;
+        height: 15px;
+    
+    }
+    
+    
+    
+    
+    
+    #navbar>svg {
+        cursor: pointer;
+    }
+    
+    #logo_person_navbar {
+        position: relative;
+        right: 35px;
+    
+    }
+    
+    #nav_div {
+        display: flex;
+    
+        float: right;
+        width: 200px;
+        height: 50px;
+    }
+    
+    #total_cart {
+        color: red;
+        position: relative;
+        right: 92px;
+        bottom: 20px;
+    }
+    
+    .nav_text {
+        font-size: 13px;
+        position: relative;
+        top: 10px;
+    
+    }
+    
+    #account {
+        right: 70px;
+    }
+    
+    #heart {
+        right: 60px;
+    }
+    
+    svg {
+        cursor: pointer;
+    }
+    
+    #cart_nav {
+        right: 76px;
+    }
+    
+    nav>hr {
+        margin-top: 20px;
+    }
+    
+    #top_hr {
+        margin-top: -10px;
+    }
+    
+    #top_bar {
+        display: block;
+        margin: 1px;
+        font-weight: lighter;
+        font-size: small;
+        color: rgba(0, 0, 0, 0.664);
+        background: rgba(0, 0, 0, 0.055);
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+    
+    #india_logo {
+        height: 25px;
+        border-radius: 50%;
+        margin-bottom: -5px;
+        cursor: pointer;
+    }
+    
+    #searchbar {
+        position: absolute;
+        border: none;
+        text-decoration: none;
+    
+        background: rgba(0, 0, 0, 0.055);
+    }
+    
+    #navigate {
+    
+        display: flex;
+        gap: 20px;
+        color: black;
+        width: 1140px;
+        margin: auto;
+    
+    }
+    
+    #navigate>button {
+        padding: 5px;
+        border: none;
+        background: white;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    #search_input {
+    
+        position: relative;
+        width: 525px;
+        margin: auto;
+        height: 40px;
+        bottom: 38px;
+        justify-items: center;
+        font-size: 40px;
+    
+    
+    }
+    
+    #search_input>input {
+        border: 1px solid rgba(0, 0, 0, 0.267);
+    
+        width: 90%;
+        height: 30px;
+        position: relative;
+        bottom: 10px;
+        font-size: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        background: rgba(167, 167, 167, 0.055);
+        padding-left: 10px;
+    }
+    
+    
+    
+    
+    .btn_hover:hover {
+        text-decoration: underline;
+    
+    }
+    
+    .p_1 {
+    
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.733);
+        margin: 20px;
+        margin-top: 30px;
+    }
+    
+    .home {
+        display: flex;
+    
+        width: 1100px;
+        margin: auto;
+    }
+    
+    #box1 {
+    
+        padding: 20px;
+    }
+    
+    #box1>img {
+        width: 275px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    
+    
+    
+    
+    #box1>h3 {
+    
+        width: 260px;
+        margin: auto;
+        font-size: 20px;
+    }
+    
+    
+    #box1>p {
+    
+        width: 250px;
+        font-weight: lighter;
+        font-size: 16px;
+        line-height: 23px;
+        margin: auto;
+        margin-top: 15px;
+    }
+    
+    #locate_drop {
+    
+        width: 250px;
+    }
+    
+    #cross_box {
+        height: 10px;
+    }
+    
+    #btn_svgcross {
+        height: 40px;
+        border-radius: 50px;
+        font-size: 18px;
+        background: white;
+        margin-top: -40px;
+    }
+    
+    #btn_svgcross:hover {
+        background: rgb(255, 255, 255);
+    }
+    
+    
+    /*nav btn css-----------------------------------/*
+    
+    
+    /* Dropdown Button */
+    .dropbtn-acc {
+    
+        width: 45px;
+        cursor: pointer;
+        border: none;
+    
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown-acc {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        left: 900px;
+        bottom: 100px;
+        height: 45px;
+    
+        background-color: transparent;
+        color: transparent;
+    }
+    
+    #dropbtn1_acc_nav {
+    
+        position: relative;
+    
+    
+    
+    
+    }
+    
+    #dropdown_content_acc_nav2 {
+    
+        margin-top: 25px;
+    
+    }
+    
+    #dropdown_content_acc_nav1 {
+        margin-top: 25px;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content-acc {
+        display: none;
+        position: absolute;
+        background: white;
+        min-width: 160px;
+        border: 1px solid rgba(0, 0, 0, 0.137);
+        z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content-acc a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content-acc a:hover {
+        background-color: #ddd;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown-acc:hover .dropdown-content-acc {
+        display: block;
+    }
+    
+    #lock_btn {
+        background-color: transparent;
+        border: none;
+        position: relative;
+        bottom: 77px;
+        width: 80px;
+        font-size: 10px;
+        border-radius: 5px;
+        left: 1055px;
+        height: 30px;
+    
+    }
+    
+    
+    #checkout_nav {
+        display: inline-block;
+        position: relative;
+        left: 1065px;
+        font-size: 12px;
+        top: 50px;
+    }
+    
+    #hr_media {
+    
+    
+        margin-top: -40px;
+    
+    }
+    
+    #hr_media2 {
+    
+    
+        margin-bottom: -0px;
+        margin-top: -40px;
+    
+    }
+    
+    #box2 > img{
+        height:330px;
+         width:780px;
+    }
+    
 
     #navbar>svg {
         display: inline-block;
@@ -652,7 +1024,7 @@ nav>hr {
     
     /* Dropdown Button */
     .dropbtn-acc {
-        position: relative;
+        
         width: 45px;
         cursor: pointer;
         border: none;
@@ -663,22 +1035,20 @@ nav>hr {
       visibility: hidden;
   }
 
+ 
+
 
 
     /* The container <div> - needed to position the dropdown content */
 
     /* The container <div> - needed to position the dropdown content */
-    .dropdown-acc:deactive{ 
-        display: hidden;
-        visibility: hidden;
-        position: relative;
+    .dropdown-acc{ 
+        
+        border: 1px solid green;
+        position: absolute;
         cursor: pointer;
         height: 45px;
         width: 40px;
-       
-        
-        
-        
     }
 
 
@@ -759,8 +1129,11 @@ nav>hr {
     }
 
     body{
-        border: 1px solid red;
+        border: 1px solid rgb(255, 0, 0);
         width: 500px;
+       
+
+        
     }
 
     #account{
@@ -825,7 +1198,389 @@ nav>hr {
 
 
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) and (min-width: 40px){
+
+
+    body {
+        font-family: sans-serif;
+    
+        width: 100%;
+    
+        margin: auto;
+    
+    }
+    
+    
+    #navbar>svg {
+        display: inline-block;
+    }
+    
+    #logo_navbar {
+        position: relative;
+    
+    
+    }
+    
+    #logo_cart_navbar {
+        position: relative;
+        margin: 10px;
+        right: 35px;
+        bottom: 10px;
+        height: 35px;
+        width: 35px;
+    
+    }
+    
+    #logo_heart_navbar {
+        position: relative;
+        right: 35px;
+    
+    
+    
+    }
+    
+    #logo_search_navbar {
+        position: relative;
+        background: red;
+        fill: currentColor;
+        color: white;
+        padding: 10px;
+        height: 15px;
+    
+    }
+    
+    
+    
+    
+    
+    #navbar>svg {
+        cursor: pointer;
+    }
+    
+    #logo_person_navbar {
+        position: relative;
+        right: 35px;
+    
+    }
+    
+    #nav_div {
+        display: flex;
+    
+        float: right;
+        width: 200px;
+        height: 50px;
+    }
+    
+    #total_cart {
+        color: red;
+        position: relative;
+        right: 92px;
+        bottom: 20px;
+    }
+    
+    .nav_text {
+        font-size: 13px;
+        position: relative;
+        top: 10px;
+    
+    }
+    
+    #account {
+        right: 70px;
+    }
+    
+    #heart {
+        right: 60px;
+    }
+    
+    svg {
+        cursor: pointer;
+    }
+    
+    #cart_nav {
+        right: 76px;
+    }
+    
+    nav>hr {
+        margin-top: 20px;
+    }
+    
+    #top_hr {
+        margin-top: -10px;
+    }
+    
+    #top_bar {
+        display: block;
+        margin: 1px;
+        font-weight: lighter;
+        font-size: small;
+        color: rgba(0, 0, 0, 0.664);
+        background: rgba(0, 0, 0, 0.055);
+        margin-top: -10px;
+        margin-bottom: -10px;
+    }
+    
+    #india_logo {
+        height: 25px;
+        border-radius: 50%;
+        margin-bottom: -5px;
+        cursor: pointer;
+    }
+    
+    #searchbar {
+        position: absolute;
+        border: none;
+        text-decoration: none;
+    
+        background: rgba(0, 0, 0, 0.055);
+    }
+    
+    #navigate {
+    
+        display: flex;
+        gap: 20px;
+        color: black;
+        width: 1140px;
+        margin: auto;
+    
+    }
+    
+    #navigate>button {
+        padding: 5px;
+        border: none;
+        background: white;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    #search_input {
+    
+        position: relative;
+        width: 525px;
+        margin: auto;
+        height: 40px;
+        bottom: 38px;
+        justify-items: center;
+        font-size: 40px;
+    
+    
+    }
+    
+    #search_input>input {
+        border: 1px solid rgba(0, 0, 0, 0.267);
+    
+        width: 90%;
+        height: 30px;
+        position: relative;
+        bottom: 10px;
+        font-size: 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+        background: rgba(167, 167, 167, 0.055);
+        padding-left: 10px;
+    }
+    
+    
+    
+    
+    .btn_hover:hover {
+        text-decoration: underline;
+    
+    }
+    
+    .p_1 {
+    
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.733);
+        margin: 20px;
+        margin-top: 30px;
+    }
+    
+    .home {
+        display: flex;
+    
+        width: 1100px;
+        margin: auto;
+    }
+    
+    #box1 {
+    
+        padding: 20px;
+    }
+    
+    #box1>img {
+        width: 275px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    
+    
+    
+    
+    #box1>h3 {
+    
+        width: 260px;
+        margin: auto;
+        font-size: 20px;
+    }
+    
+    
+    #box1>p {
+    
+        width: 250px;
+        font-weight: lighter;
+        font-size: 16px;
+        line-height: 23px;
+        margin: auto;
+        margin-top: 15px;
+    }
+    
+    #locate_drop {
+    
+        width: 250px;
+    }
+    
+    #cross_box {
+        height: 10px;
+    }
+    
+    #btn_svgcross {
+        height: 40px;
+        border-radius: 50px;
+        font-size: 18px;
+        background: white;
+        margin-top: -40px;
+    }
+    
+    #btn_svgcross:hover {
+        background: rgb(255, 255, 255);
+    }
+    
+    
+    /*nav btn css-----------------------------------/*
+    
+    
+    /* Dropdown Button */
+    .dropbtn-acc {
+    
+        width: 45px;
+        cursor: pointer;
+        border: none;
+    
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown-acc {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        left: 900px;
+        bottom: 100px;
+        height: 45px;
+    
+        background-color: transparent;
+        color: transparent;
+    }
+    
+    #dropbtn1_acc_nav {
+    
+        position: relative;
+    
+    
+    
+    
+    }
+    
+    #dropdown_content_acc_nav2 {
+    
+        margin-top: 25px;
+    
+    }
+    
+    #dropdown_content_acc_nav1 {
+        margin-top: 25px;
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content-acc {
+        display: none;
+        position: absolute;
+        background: white;
+        min-width: 160px;
+        border: 1px solid rgba(0, 0, 0, 0.137);
+        z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content-acc a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    
+    /* Change color of dropdown links on hover */
+    .dropdown-content-acc a:hover {
+        background-color: #ddd;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .dropdown-acc:hover .dropdown-content-acc {
+        display: block;
+    }
+    
+    #lock_btn {
+        background-color: transparent;
+        border: none;
+        position: relative;
+        bottom: 77px;
+        width: 80px;
+        font-size: 10px;
+        border-radius: 5px;
+        left: 1055px;
+        height: 30px;
+    
+    }
+    
+    
+    #checkout_nav {
+        display: inline-block;
+        position: relative;
+        left: 1065px;
+        font-size: 12px;
+        top: 50px;
+    }
+    
+    #hr_media {
+    
+    
+        margin-top: -40px;
+    
+    }
+    
+    #hr_media2 {
+    
+    
+        margin-bottom: -0px;
+        margin-top: -40px;
+    
+    }
+    
+    #box2 > img{
+        height:330px;
+         width:780px;
+    }
+    
+
+
 
     #logo_person_navbar{
         visibility: hidden;
@@ -883,8 +1638,8 @@ width: 250px;
 }
 #logo_search_navbar{
     visibility: visible;
-    bottom: 95px;
-left: 150px;
+    bottom: 60px;
+    left: 150px;
 
 }
 #hr_media2{
@@ -900,6 +1655,7 @@ left: 150px;
      
      width: 100%;
  }
+ 
 
    
 }
