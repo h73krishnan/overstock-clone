@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
     <link rel="stylesheet" href="product_page.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 
 </head>
@@ -49,7 +52,7 @@
 
 
 
-
+              
 
                 <svg id="logo_person_navbar" class="UserDropDowns_icon_06" width="22" height="22" viewBox="0 0 24 24"
                     stroke="#2F3337" fill="#2F3337">
@@ -59,8 +62,12 @@
                         stroke-linejoin="round"></path>
 
                 </svg>
+  <p class="nav_text" id="account">Account </p>
 
-                <p class="nav_text" id="account">Account</p>
+                
+
+
+
 
 
 
@@ -91,7 +98,7 @@
 
 
             <div id="search_input"><input type="text" id="serachbar" placeholder="Search">
-                <svg id="logo_search_navbar" width="22" height="22" viewBox="0 0 24 24" stroke="#2F3337">
+                <svg  width="22" height="22" viewBox="0 0 24 24" stroke="#2F3337" fill="#FFFFFF">
                     <title>Search</title>
                     <path d="M22 22l-6.344-6.344M10 18a8 8 0 100-16 8 8 0 000 16z" stroke="inherit" fill="none"
                         stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -114,61 +121,194 @@
             <hr id="hr_media2">
 
             <div id="navigate">
-                <button class="btn_hover">Furniture</button>
-                <button class="btn_hover">Rugs</button>
-                <button class="btn_hover">Decor</button>
-                <button class="btn_hover">Bed & Bath</button>
-                <button class="btn_hover">Home Improvement</button>
-                <button class="btn_hover">Kitchen</button>
-                <button class="btn_hover">Outdoor</button>
-                <button class="btn_hover">Jewlery</button>
-                <button class="btn_hover">Lighting</button>
-                <button class="btn_hover">Kids & Baby</button>
-                <button class="btn_hover">More</button>|
-                <button class="btn_hover">Ideas</button>
-                <button class="btn_hover" style="color: red;">Sales & Deals</button>
+
+                <div class="dropdown2">
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">Furniture</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">Rugs</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">Decor</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">Bed & Bath</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">Home Improvement</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">Kitchen</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">Outdoor</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">Jewlery</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">Lighting</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">kids & Baby</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">More</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+                    |
+
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">Ideas</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+
+                    <button onclick="myFunction2()" class="dropbtn btn_hover">Sales & Deals</button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+
+                </div>
+                </div>
 
             </div>
-            <div id="hidden"><div class="dropdown-acc">
-                <button class="dropbtn-acc" id="dropbtn1_acc_nav"></button>
-                <div class="dropdown-content-acc" id="dropdown_content_acc_nav1">
-                    <a href="#">My Account</a>
-                    <a href="#">My Orders</a>
-                    <a href="#">My Reviews</a>
-                    <a href="#">Gift Cards</a>
-                    <a href="#">Help</a>
-                    <a href="#">
-                        <hr>
-                    </a>
-                    <a href="#">Sign Out</a>
-                </div>
-            </div>
-
-
-            <div class="dropdown-acc">
-                <button class="dropbtn-acc" id="dropdown_btn_acc_nav2"></button>
-                <div class="dropdown-content-acc" id="dropdown_content_acc_nav2">
-                    <a href="#">Favoraties</a>
-                    <a href="#">Save For Later</a>
-                    <a href="#">
-                        <hr>
-                    </a>
-                    <a href="#">View All My Lists</a>
-                    <a href="#">Find a List</a>
-                </div>
-            </div></div>
-
-            
-    
-
-
-    </nav>
 
 
 
 
 
-    <hr id="hr_media">
+        </nav>
+
+
+
+
+
+        <hr id="hr_media">
     </div>
     <!-- End of navbar ---------------------------------------->
 
@@ -181,264 +321,282 @@
 
 
 
-<div id="fix">
+    <div id="fix">
 
 
-    <div class="home">
-        <p class="p_1">1-60 of 778 Results</p>
+        <div class="home">
+            <p class="p_1">1-60 of 778 Results</p>
 
-        <h1 style="margin-top: 60px; position: relative; right: 130px;">Chic Home</h1>
-    </div>
-
-    <div class="home">
-
-        <div id="box1">
-
-
-            <img src="https://ak1.ostkcdn.com/img/mxc/BrandStoreLogo_Chic-Home-Design.png" alt="">
-
-            <h3>Comfort and Design awaits you!</h3>
-            <p>You'll never pass a chance to relax and unwind in your bedroom with a silky soft, unique, one-of-a-kind
-                design that suits your personality!</p>
-
-        </div>
-        <div id="box2">
-
-
-            <img src="//ak1.ostkcdn.com/img/mxc/CHICHOME-HERO-BB.jpg" alt="">
-
-
-
+            <h1 style="margin-top: 60px; position: relative; right: 130px;">Chic Home</h1>
         </div>
 
-    </div>
+        <div class="home">
 
-    <div class="home">
+            <div id="box1">
 
 
-        <div id="locate_drop">
+                <img src="https://ak1.ostkcdn.com/img/mxc/BrandStoreLogo_Chic-Home-Design.png" alt="">
 
-            <div>
-                <h4>Filtered By:</h4><br>
-                <button id="btn_svgcross">Chic Home <svg class="icon-close" id="cross_box" viewBox="0 0 14 14">
-                        <path
-                            d="M13.7.3c-.4-.4-1-.4-1.4 0L7 5.6 1.7.3C1.3-.1.7-.1.3.3c-.4.4-.4 1 0 1.4L5.6 7 .3 12.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3.3 0 .5-.1.7-.3L7 8.4l5.3 5.3c.2.2.5.3.7.3.2 0 .5-.1.7-.3.4-.4.4-1 0-1.4L8.4 7l5.3-5.3c.4-.4.4-1 0-1.4z">
-                        </path>
-                    </svg></button>
-            </div>
-            <hr>
-            <div class="dropdown">
-                <button onclick="myFunction1()" class="dropbtn"><b>Categories</b> <svg
-                        style="position: relative; top:5px; margin-left:100px; height:20px;" width="24" height="24"
-                        viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-                        <title>Chevron Down</title>
-                        <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></button>
-                <div id="myDropdown1" class="dropdown-content">
-                    <a href="#">Chic Home Bedding & Path (692)</a>
-                    <a href="#">Chic Home Home Goods (86)</a>
+                <h3>Comfort and Design awaits you!</h3>
+                <p>You'll never pass a chance to relax and unwind in your bedroom with a silky soft, unique,
+                    one-of-a-kind
+                    design that suits your personality!</p>
 
-                </div>
             </div>
-            <hr>
-            <div class="dropdown">
-                <button onclick="myFunction2()" class="dropbtn"><b>Price</b> <svg
-                        style="position: relative; top:5px; margin-left:143px; height:20px;" width="24" height="24"
-                        viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-                        <title>Chevron Down</title>
-                        <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></button>
-                <div id="myDropdown2" class="dropdown-content">
-                    <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
-                    <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
-                    <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
-                    <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
-                    <a href="#"> <button class="btn_price">Minimum</button><button class="btn_price">Maximum</button>
-                    </a>
-                    <a href="#"> <button class="apply">Apply</button></a>
+            <div id="box2">
 
-                </div>
-            </div>
-            <hr>
-            <div class="dropdown3">
-                <button onclick="myFunction3()" class="dropbtn"><b>Sales</b> <svg
-                        style="position: relative; top:5px; margin-left:140px; height:20px;" width="24" height="24"
-                        viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-                        <title>Chevron Down</title>
-                        <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></button>
-                <div id="myDropdown3" class="dropdown-content">
-                    <a href="#"><input type="checkbox" class="checkbox"> Clearance (48)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> New Products (28)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Top Rated (451)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> On Sale (304)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Best Selling (2)</a>
-                </div>
-            </div>
-            <hr>
-            <div class="dropdown4">
-                <button onclick="myFunction4()" class="dropbtn"><b>Styles</b> <svg
-                        style="position: relative; top:5px; margin-left:135px; height:20px;" width="24" height="24"
-                        viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-                        <title>Chevron Down</title>
-                        <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></button>
-                <div id="myDropdown4" class="dropdown-content">
-                    <a href="#"><input type="checkbox" class="checkbox"> Modern & Contempoary (414)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Victorian (164)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Casual (111)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Shabby chic (56)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Traditional (42)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> French Country (48)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Mid-Centuary Modern (14)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Vintage (13)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Bohemian & Eclertic (9)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Transitional (8)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Country (6)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Glam (2)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Americana (1)</a>
-                </div>
-            </div>
-            <hr>
-            <div class="dropdown5">
-                <button onclick="myFunction5()" class="dropbtn"><b>Brands</b> <svg
-                        style="position: relative; top:5px; margin-left:125px; height:20px;" width="24" height="24"
-                        viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-                        <title>Chevron Down</title>
-                        <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></button>
-                <div id="myDropdown5" class="dropdown-content">
-                    <a href="#"><input type="checkbox" class="checkbox"> iCanvas (3,099)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> DESIGN ART (1,863)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Diamond2Deal (943)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Kavaka Designs (512)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Country (6)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Glam (2)</a>
-                    <a href="#"><u>See More</u> </a>
 
-                </div>
-            </div>
-            <hr>
-            <div class="dropdown6">
-                <button onclick="myFunction6()" class="dropbtn"><b>Colors</b> <svg
-                        style="position: relative; top:5px; margin-left:130px; height:20px;" width="24" height="24"
-                        viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-                        <title>Chevron Down</title>
-                        <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></button>
-                <div id="myDropdown6" class="dropdown-content">
-                    <a href="#"><input type="checkbox" class="checkbox"> White (244)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Blue (244)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Grey (207)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Brown (119)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Black(117)</a>
-                    <a href="#"><u>See More</u> </a>
-                </div>
-            </div>
-            <hr>
-            <div class="dropdown7">
-                <button onclick="myFunction7()" class="dropbtn"><b>Materials</b> <svg
-                        style="position: relative; top:5px; margin-left:110px; height:20px;" width="24" height="24"
-                        viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-                        <title>Chevron Down</title>
-                        <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></button>
-                <div id="myDropdown7" class="dropdown-content">
-                    <a href="#"><input type="checkbox" class="checkbox"> Microfiber (611)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Cotton (38)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Microplush (21)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Foam (20)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Sherpa (16)</a>
-                    <a href="#"><u>See More</u> </a>
-                </div>
-            </div>
-            <hr>
-            <div class="dropdown8">
-                <button onclick="myFunction8()" class="dropbtn"><b>Shape</b> <svg
-                        style="position: relative; top:5px; margin-left:130px; height:20px;" width="24" height="24"
-                        viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-                        <title>Chevron Down</title>
-                        <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></button>
-                <div id="myDropdown8" class="dropdown-content">
-                    <a href="#"><input type="checkbox" class="checkbox"> Rectangle (18)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Square (12)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Rectangular (4)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Round (3)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Semi-circle (2)</a>
-                    <a href="#"><u>See More</u> </a>
-                </div>
-            </div>
-            <hr>
-            <div class="dropdown9">
-                <button onclick="myFunction9()" class="dropbtn"><b>Sizes</b> <svg
-                        style="position: relative; top:5px; margin-left:135px; height:20px;" width="24" height="24"
-                        viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-                        <title>Chevron Down</title>
-                        <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></button>
-                <div id="myDropdown9" class="dropdown-content">
-                    <a href="#"><input type="checkbox" class="checkbox"> Queen (443)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> King (379)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Twin (220)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Full (66)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Medium (31)</a>
-                    <a href="#"><u>See More</u> </a>
-                </div>
-            </div>
-            <hr>
-            <div class="dropdown10">
-                <button onclick="myFunction10()" class="dropbtn"><b>Subjects</b> <svg
-                        style="position: relative; top:5px; margin-left:110px; height:20px;" width="24" height="24"
-                        viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-                        <title>Chevron Down</title>
-                        <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></button>
-                <div id="myDropdown10" class="dropdown-content">
-                    <a href="#"><input type="checkbox" class="checkbox"> LandScapes (7)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Abstract (6)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Floral (4)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Animals (3)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> Beach (3)</a>
-                    <a href="#"><u>See More</u> </a>
-                </div>
-            </div>
-            <hr>
-            <div class="dropdown11">
-                <button onclick="myFunction11()" class="dropbtn"><b>Commercial</b> <svg
-                        style="position: relative; top:5px; margin-left:85px; height:20px;" width="24" height="24"
-                        viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
-                        <title>Chevron Down</title>
-                        <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2" stroke-miterlimit="10"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg></button>
-                <div id="myDropdown11" class="dropdown-content">
-                    <a href="#"><input type="checkbox" class="checkbox"> Yes (5)</a>
-                    <a href="#"><input type="checkbox" class="checkbox"> No (2)</a>
-                </div>
-            </div>
+                <img src="//ak1.ostkcdn.com/img/mxc/CHICHOME-HERO-BB.jpg" alt="">
 
 
 
-
-
+            </div>
 
         </div>
 
+        <div class="home">
+
+
+            <div id="locate_drop">
+
+                <div>
+                    <h4>Filtered By:</h4><br>
+                    <button id="btn_svgcross">Chic Home <svg class="icon-close" id="cross_box" viewBox="0 0 14 14">
+                            <path
+                                d="M13.7.3c-.4-.4-1-.4-1.4 0L7 5.6 1.7.3C1.3-.1.7-.1.3.3c-.4.4-.4 1 0 1.4L5.6 7 .3 12.3c-.4.4-.4 1 0 1.4.2.2.4.3.7.3.3 0 .5-.1.7-.3L7 8.4l5.3 5.3c.2.2.5.3.7.3.2 0 .5-.1.7-.3.4-.4.4-1 0-1.4L8.4 7l5.3-5.3c.4-.4.4-1 0-1.4z">
+                            </path>
+                        </svg></button>
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <button onclick="myFunction1()" class="dropbtn"><b>Categories</b> <svg
+                            style="position: relative; top:5px; margin-left:100px; height:20px;" width="24" height="24"
+                            viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+                            <title>Chevron Down</title>
+                            <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></button>
+                    <div id="myDropdown1" class="dropdown-content">
+                        <a href="#">Chic Home Bedding & Path (692)</a>
+                        <a href="#">Chic Home Home Goods (86)</a>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <button onclick="myFunction2()" class="dropbtn"><b>Price</b> <svg
+                            style="position: relative; top:5px; margin-left:143px; height:20px;" width="24" height="24"
+                            viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+                            <title>Chevron Down</title>
+                            <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></button>
+                    <div id="myDropdown2" class="dropdown-content">
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> INR 5243 - INR 8738(253) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <input type="checkbox" class="checkbox"> Under INR 5243 (105) </a>
+                        <a href="#"> <button class="btn_price">Minimum</button><button
+                                class="btn_price">Maximum</button>
+                        </a>
+                        <a href="#"> <button class="apply">Apply</button></a>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <button onclick="myFunction3()" class="dropbtn"><b>Sales</b> <svg
+                            style="position: relative; top:5px; margin-left:140px; height:20px;" width="24" height="24"
+                            viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+                            <title>Chevron Down</title>
+                            <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></button>
+                    <div id="myDropdown3" class="dropdown-content">
+                        <a href="#"><input type="checkbox" class="checkbox"> Clearance (48)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> New Products (28)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Top Rated (451)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> On Sale (304)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Best Selling (2)</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <button onclick="myFunction4()" class="dropbtn"><b>Styles</b> <svg
+                            style="position: relative; top:5px; margin-left:135px; height:20px;" width="24" height="24"
+                            viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+                            <title>Chevron Down</title>
+                            <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></button>
+                    <div id="myDropdown4" class="dropdown-content">
+                        <a href="#"><input type="checkbox" class="checkbox"> Modern & Contempoary (414)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Victorian (164)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Casual (111)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Shabby chic (56)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Traditional (42)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> French Country (48)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Mid-Centuary Modern (14)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Vintage (13)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Bohemian & Eclertic (9)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Transitional (8)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Country (6)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Glam (2)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Americana (1)</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <button onclick="myFunction5()" class="dropbtn"><b>Brands</b> <svg
+                            style="position: relative; top:5px; margin-left:125px; height:20px;" width="24" height="24"
+                            viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+                            <title>Chevron Down</title>
+                            <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></button>
+                    <div id="myDropdown5" class="dropdown-content">
+                        <a href="#"><input type="checkbox" class="checkbox"> iCanvas (3,099)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> DESIGN ART (1,863)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Diamond2Deal (943)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Kavaka Designs (512)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Country (6)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Glam (2)</a>
+                        <a href="#"><u>See More</u> </a>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <button onclick="myFunction6()" class="dropbtn"><b>Colors</b> <svg
+                            style="position: relative; top:5px; margin-left:130px; height:20px;" width="24" height="24"
+                            viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+                            <title>Chevron Down</title>
+                            <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></button>
+                    <div id="myDropdown6" class="dropdown-content">
+                        <a href="#"><input type="checkbox" class="checkbox"> White (244)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Blue (244)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Grey (207)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Brown (119)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Black(117)</a>
+                        <a href="#"><u>See More</u> </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <button onclick="myFunction7()" class="dropbtn"><b>Materials</b> <svg
+                            style="position: relative; top:5px; margin-left:110px; height:20px;" width="24" height="24"
+                            viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+                            <title>Chevron Down</title>
+                            <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></button>
+                    <div id="myDropdown7" class="dropdown-content">
+                        <a href="#"><input type="checkbox" class="checkbox"> Microfiber (611)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Cotton (38)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Microplush (21)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Foam (20)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Sherpa (16)</a>
+                        <a href="#"><u>See More</u> </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <button onclick="myFunction8()" class="dropbtn"><b>Shape</b> <svg
+                            style="position: relative; top:5px; margin-left:130px; height:20px;" width="24" height="24"
+                            viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+                            <title>Chevron Down</title>
+                            <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></button>
+                    <div id="myDropdown8" class="dropdown-content">
+                        <a href="#"><input type="checkbox" class="checkbox"> Rectangle (18)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Square (12)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Rectangular (4)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Round (3)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Semi-circle (2)</a>
+                        <a href="#"><u>See More</u> </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <button onclick="myFunction9()" class="dropbtn"><b>Sizes</b> <svg
+                            style="position: relative; top:5px; margin-left:135px; height:20px;" width="24" height="24"
+                            viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+                            <title>Chevron Down</title>
+                            <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></button>
+                    <div id="myDropdown9" class="dropdown-content">
+                        <a href="#"><input type="checkbox" class="checkbox"> Queen (443)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> King (379)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Twin (220)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Full (66)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Medium (31)</a>
+                        <a href="#"><u>See More</u> </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <button onclick="myFunction10()" class="dropbtn"><b>Subjects</b> <svg
+                            style="position: relative; top:5px; margin-left:110px; height:20px;" width="24" height="24"
+                            viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+                            <title>Chevron Down</title>
+                            <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></button>
+                    <div id="myDropdown10" class="dropdown-content">
+                        <a href="#"><input type="checkbox" class="checkbox"> LandScapes (7)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Abstract (6)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Floral (4)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Animals (3)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> Beach (3)</a>
+                        <a href="#"><u>See More</u> </a>
+                    </div>
+                </div>
+                <hr>
+                <div class="dropdown">
+                    <button onclick="myFunction11()" class="dropbtn"><b>Commercial</b> <svg
+                            style="position: relative; top:5px; margin-left:85px; height:20px;" width="24" height="24"
+                            viewBox="0 0 24 24" stroke="#2F3337" fill="#2F3337">
+                            <title>Chevron Down</title>
+                            <path d="M2 7l10 10L22 7" stroke="inherit" fill="none" stroke-width="2"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg></button>
+                    <div id="myDropdown11" class="dropdown-content">
+                        <a href="#"><input type="checkbox" class="checkbox"> Yes (5)</a>
+                        <a href="#"><input type="checkbox" class="checkbox"> No (2)</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+        </div>
 
     </div>
 
-</div>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
 </body>
 

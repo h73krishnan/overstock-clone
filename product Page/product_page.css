@@ -39,14 +39,12 @@ body {
 
 }
 
-#logo_search_navbar {
-    position: relative;
-    background: red;
-    fill: currentColor;
-    color: white;
-    padding: 10px;
-    height: 15px;
-
+#search_input>svg{
+background: rgb(255, 0, 0);
+width: 30px;
+height: 30px;
+position: relative;
+bottom: 9px;
 }
 
 
@@ -75,18 +73,21 @@ body {
     color: red;
     position: relative;
     right: 92px;
-    bottom: 20px;
+    bottom: 10px;
 }
 
 .nav_text {
     font-size: 13px;
     position: relative;
-    top: 10px;
+    top: 20px;
+    cursor: pointer;
 
 }
 
 #account {
     right: 70px;
+    background-color: transparent;
+    height: 20px;
 }
 
 #heart {
@@ -116,8 +117,7 @@ nav>hr {
     font-size: small;
     color: rgba(0, 0, 0, 0.664);
     background: rgba(0, 0, 0, 0.055);
-    margin-top: -10px;
-    margin-bottom: -10px;
+    
 }
 
 #india_logo {
@@ -256,16 +256,22 @@ nav>hr {
     background: rgb(255, 255, 255);
 }
 
+#hr_media{
+    position: relative;
+    top: 30px;
+}
+
 
 /*nav btn css-----------------------------------/*
 
 
 /* Dropdown Button */
 .dropbtn-acc {
-
+    position: relative;
     width: 45px;
     cursor: pointer;
-    border: none;
+    
+    
 
 }
 
@@ -274,10 +280,10 @@ nav>hr {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    left: 900px;
-    bottom: 100px;
+    margin-right: 200px;
+    left: 120px;
     height: 45px;
-
+    bottom: 70px;
     background-color: transparent;
     color: transparent;
 }
@@ -289,6 +295,12 @@ nav>hr {
 
 
 
+}
+
+.dropdown > button{
+  
+  margin: -10px;
+  font-size: 17px;
 }
 
 #dropdown_content_acc_nav2 {
@@ -356,7 +368,7 @@ nav>hr {
     position: relative;
     left: 1065px;
     font-size: 12px;
-    top: 50px;
+    top: 55px;
 }
 
 #hr_media {
@@ -380,7 +392,74 @@ nav>hr {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 800px) and (min-width: 401px){
 
@@ -1723,20 +1802,19 @@ width: 250px;
 
 /* Dropdown Button */
 .dropbtn {
-
+    display: inline-block;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     padding: 10px;
-    font-size: 16px;
+    font-size: 13px;
     border: none;
     cursor: pointer;
 }
 
 
-.dropbtn>button {
 
-    border: 1px solid red;
-}
+
+
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover,
