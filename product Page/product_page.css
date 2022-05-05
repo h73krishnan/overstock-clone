@@ -274,7 +274,7 @@ nav>hr {
     left: 900px;
     bottom: 100px;
     height: 45px;
-    border: 1px solid red;
+
     background-color: transparent;
     color: transparent;
 }
@@ -289,14 +289,14 @@ nav>hr {
 }
 
 #dropdown_content_acc_nav2 {
-   
+
     margin-top: 25px;
-    
+
 }
 
 #dropdown_content_acc_nav1 {
     margin-top: 25px;
-        
+
 }
 
 
@@ -371,22 +371,27 @@ nav>hr {
 
 }
 
+#box2 > img{
+    height:330px;
+     width:780px;
+}
 
 
 
 
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 800px) {
 
     body {
         font-family: sans-serif;
 
-        width: 100%;
+        
+        
 
-        margin: auto;
+        
 
     }
 
+   
 
     #navbar>svg {
         display: inline-block;
@@ -594,6 +599,11 @@ nav>hr {
         margin-bottom: 15px;
     }
 
+    #box2 > img{
+        width:175px;
+         height: auto;
+    }
+
 
 
 
@@ -642,45 +652,37 @@ nav>hr {
     
     /* Dropdown Button */
     .dropbtn-acc {
-
+        position: relative;
         width: 45px;
         cursor: pointer;
         border: none;
-
+        
     }
 
+  #hidden{
+      visibility: hidden;
+  }
+
+
+
     /* The container <div> - needed to position the dropdown content */
-   
-/* The container <div> - needed to position the dropdown content */
-.dropdown-acc {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    
-    height: 45px;
-    border: 1px solid green;
-    
-}
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown-acc:deactive{ 
+        display: hidden;
+        visibility: hidden;
+        position: relative;
+        cursor: pointer;
+        height: 45px;
+        width: 40px;
+       
+        
+        
+        
+    }
 
 
 
-#dropdown_content_acc_nav2 {
-
-    bottom: 545px;
-    left: 1020px;
-    margin-top: 10px;
-    
-
-}
-
-#dropdown_content_acc_nav1 {
-
-    bottom: 460px;
-    left: 950px;
-    margin-top: 10px;
-    
-
-}
 
 
 
@@ -727,7 +729,7 @@ nav>hr {
         width: 80px;
         font-size: 10px;
         border-radius: 5px;
-        left: 400px;
+        left: 420px;
         height: 30px;
 
     }
@@ -736,7 +738,7 @@ nav>hr {
     #checkout_nav {
         display: inline-block;
         position: relative;
-        left: 410px;
+        left: 430px;
         font-size: 12px;
         top: 50px;
     }
@@ -757,7 +759,10 @@ nav>hr {
     }
 
     #fix {
-        border: 1px solid orange;
+        
+       width: 500px;
+       margin: auto;
+        
 
     }
 
@@ -783,6 +788,90 @@ nav>hr {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 800px){
+
+    #logo_person_navbar{
+        visibility: hidden;
+    }
+    #account{
+        visibility: hidden;
+    }
+    #heart{
+        visibility: hidden;
+    }
+    #logo_heart_navbar{
+        visibility: hidden;
+    }
+    #navigate{
+        visibility: hidden;
+    }
+    #hr_media{
+        visibility: hidden;
+    }
+   #box2{
+       visibility: hidden;
+   }
+   #fix{
+       border: 1px solid black;
+       width: 100%;
+   }
+   #lock_btn {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    bottom: 77px;
+    width: 80px;
+    font-size: 10px;
+    border-radius: 5px;
+    left: 310px;
+    height: 30px;
+
+}
+
+
+#checkout_nav {
+    display: inline-block;
+    position: relative;
+    left: 320px;
+    font-size: 12px;
+    top: 50px;
+}
+
+#search_input{
+width: 250px;
+}
+#search_input{
+    visibility: hidden;
+}
+#logo_search_navbar{
+    visibility: visible;
+    bottom: 95px;
+left: 150px;
+
+}
+#hr_media2{
+    margin-top: -50px;
+   
+}
+
+
+   
+}
 
 
 
