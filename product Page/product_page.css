@@ -758,18 +758,40 @@ nav>hr {
 
     }
 
-    #fix {
-        
-       width: 500px;
-       margin: auto;
-        
+    body{
+        border: 1px solid red;
+        width: 500px;
+    }
 
+    #account{
+        visibility: hidden;
+    }
+    
+    
+    #logo_person_navbar{
+        visibility: hidden;
+    }
+
+    #heart{
+        visibility: hidden;
+    }
+    #logo_heart_navbar{
+        visibility: hidden;
+    }
+    #navigate{
+        visibility: hidden;
+    }
+    #hr_media{
+        visibility: hidden;
+    }
+    #navbar{
+        height: 130px;
+        
+        padding-bottom: -100px;
     }
 
 
-
-
-
+    
 
 
 
@@ -803,7 +825,7 @@ nav>hr {
 
 
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 400px){
 
     #logo_person_navbar{
         visibility: hidden;
@@ -821,14 +843,15 @@ nav>hr {
         visibility: hidden;
     }
     #hr_media{
-        visibility: hidden;
+        visibility: visible;
     }
    #box2{
        visibility: hidden;
    }
    #fix{
-       border: 1px solid black;
-       width: 100%;
+       
+       width: 390px;
+       
    }
    #lock_btn {
     background-color: transparent;
@@ -865,10 +888,18 @@ left: 150px;
 
 }
 #hr_media2{
-    margin-top: -50px;
+    visibility: hidden;
    
 }
-
+#navbar{
+    
+    height: 100px;
+    
+}
+ body{
+     
+     width: 100%;
+ }
 
    
 }
