@@ -656,24 +656,16 @@ nav>hr {
     position: relative;
     display: inline-block;
     cursor: pointer;
-    left: 1025px;
-    bottom: 100px;
+    
     height: 45px;
     border: 1px solid green;
     
 }
 
-#dropbtn1_acc_nav {
 
-    position: relative;
-
-
-
-
-}
 
 #dropdown_content_acc_nav2 {
-    position: fixed;
+
     bottom: 545px;
     left: 1020px;
     margin-top: 10px;
@@ -682,7 +674,7 @@ nav>hr {
 }
 
 #dropdown_content_acc_nav1 {
-    position: fixed;
+
     bottom: 460px;
     left: 950px;
     margin-top: 10px;
