@@ -1,0 +1,104 @@
+#sorting {
+    display: flex;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+    height: 50px;
+    position: relative;
+    bottom: 900px;
+    left: 840px;
+    border-radius: 5px;
+    
+
+}
+
+#sorting>select {
+    border: none;
+    width: 200px;
+    padding-left: 10px;
+}
+
+#sorting>select>option {
+    border: none;
+    width: 200px;
+    padding-left: 10px;
+}
+
+#append_products {
+    display: grid;
+    width: 810px;
+    position: relative;
+    bottom: 865px;
+    left: 155px;
+    grid-template-columns: 250px 250px 250px;
+    gap: 20px;
+}
+
+#append_products>div {
+
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    height: auto;
+
+}
+
+
+
+#append_products>div>center>img {
+    width: 220px;
+    margin-top: 20px;
+
+}
+
+#append_products>div>button {
+    border-radius: 15px;
+    width: 50px;
+    background: white;
+    position: relative;
+    bottom: 235px;
+    left: 170px;
+    border: 1px solid rgb(0, 0, 0);
+    
+}
+
+#append_products>div>h5 {
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
+    height: 80px;
+    font-weight: bold;
+}
+
+#append_products>div>div {
+    
+    padding: 10px;
+    
+    
+}
+
+#append_products>div>p {
+    font-size: 13px;
+    text-align: left;
+    padding: 10px;
+    height: 80px;
+    font-weight: normal;
+}
+
+#append_products>div>div>button {
+    
+    position: relative;
+    bottom: 150px;
+    left: 150px;
+    border: none;
+    background: white;
+    cursor: pointer;
+    
+    
+    
+}
+
+#append_products>div>div>button:hover {
+    
+    text-decoration: underline;
+    
+    
+}
+
