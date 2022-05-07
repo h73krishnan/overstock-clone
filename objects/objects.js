@@ -371,11 +371,13 @@ let prodArr = [
 */
 
 
-var productdiv=document.getElementById("append_products")
 
 
+
+  var productdiv=document.getElementById("append_products")
 
 prodArr.map((elem)=>{
+
 
   var div=document.createElement("div");
   div.setAttribute("class","appdiv")
@@ -430,16 +432,34 @@ title.innerText=elem.name
 function sortlh(){
   prodArr.sort((a, b) => {
     a=a.price;
-    a=Number(a);
+    
     
     b=b.price;
-    b=Number(b);
+  
     return a - b;
 });
 
-var div=document.getElementsByClassName("appdiv");
-div.remove();
-console.log(prodArr)
+
+
+
+var sortproductdiv=document.getElementById("sort_appenddiv")
+
+  
+
+
+var appdiv=document.createElement("div");
+appdiv.setAttribute("id","append_products");
+
+sortproductdiv.append(appdiv)
+
+
+
+
+
+
+
+
+
 
 prodArr.map((elem)=>{
 
@@ -482,10 +502,200 @@ title.innerText=elem.name
 
   div.append(centerimg,reviews,title,rating,des,btndiv)
 
-  productdiv.append(div)
-
+appdiv.append(div)
 
 
 })
+
+
+var div=productdiv
+div.remove()
+console.log(prodArr)
+}
+
+
+
+
+
+
+
+
+function sorthl(){
+
+
+  prodArr.sort((a, b) => {
+    a=a.price;
+    
+    
+    b=b.price;
+  
+    return b - a;
+});
+
+var div=productdiv
+div.remove()
+console.log(prodArr)
+
+
+var sortproductdiv=document.getElementById("sort_appenddiv")
+
+  
+
+
+var appdiv=document.createElement("div");
+appdiv.setAttribute("id","append_products");
+
+sortproductdiv.append(appdiv)
+
+
+
+
+
+
+
+
+
+
+prodArr.map((elem)=>{
+
+  var div=document.createElement("div");
+  div.setAttribute("class","appdiv")
+
+
+
+  var centerimg=document.createElement("center");
+  var img=document.createElement("img");
+  img.src=elem.img_url;
+  centerimg.append(img)
+
+
+var reviews=document.createElement("button");
+reviews.innerText=elem.info.reviews;
+
+
+
+var title=document.createElement("h5");
+title.innerText=elem.name
+
+
+
+   var rating=document.createElement("div");
+   rating.innerText=elem.ratings;
+  
+   var des=document.createElement("p");
+   des.innerText=elem.desc;
+
+   var btndiv=document.createElement("div");
+
+   var btn=document.createElement("button");
+   btn.innerText="Detail";
+
+   btndiv.append(btn)
+
+
+
+
+  div.append(centerimg,reviews,title,rating,des,btndiv)
+
+appdiv.append(div)
+
+
+})
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+function sortcustom(){
+  prodArr.sort((a, b) => {
+    a=a.info.reviews;
+    
+    
+    b=b.info.reviews;
+  
+    return b - a;
+});
+
+var div=productdiv
+div.remove()
+console.log(prodArr)
+
+
+var sortproductdiv=document.getElementById("sort_appenddiv")
+
+  
+
+
+var appdiv=document.createElement("div");
+appdiv.setAttribute("id","append_products");
+
+sortproductdiv.append(appdiv)
+
+
+
+
+
+
+
+
+
+
+prodArr.map((elem)=>{
+
+  var div=document.createElement("div");
+  div.setAttribute("class","appdiv")
+
+
+
+  var centerimg=document.createElement("center");
+  var img=document.createElement("img");
+  img.src=elem.img_url;
+  centerimg.append(img)
+
+
+var reviews=document.createElement("button");
+reviews.innerText=elem.info.reviews;
+
+
+
+var title=document.createElement("h5");
+title.innerText=elem.name
+
+
+
+   var rating=document.createElement("div");
+   rating.innerText=elem.ratings;
+  
+   var des=document.createElement("p");
+   des.innerText=elem.desc;
+
+   var btndiv=document.createElement("div");
+
+   var btn=document.createElement("button");
+   btn.innerText="Detail";
+
+   btndiv.append(btn)
+
+
+
+
+  div.append(centerimg,reviews,title,rating,des,btndiv)
+
+appdiv.append(div)
+
+
+})
+
+
 
 }
