@@ -891,7 +891,7 @@ padding: 5px;
     #search_input>input {
         border: 1px solid rgba(0, 0, 0, 0.267);
     
-        width: 90%;
+        width: 80%;
         height: 30px;
         position: relative;
         
@@ -904,7 +904,7 @@ padding: 5px;
     }
     
     #search_input>svg{
-        top: 21px;
+    top: 22px;        
     }
     
     
@@ -997,7 +997,7 @@ padding: 5px;
         width: 80px;
         font-size: 10px;
         border-radius: 5px;
-        left: 570px;
+        left: 690px;
         height: 30px;
     
     }
@@ -1006,7 +1006,7 @@ padding: 5px;
     #checkout_nav {
         display: inline-block;
         position: relative;
-        left: 580px;
+        left: 700px;
         font-size: 12px;
         top: 55px;
     }
@@ -1021,7 +1021,7 @@ padding: 5px;
     
     
     #box2 > img{
-        height:100px;
+        height:140px;
          width:auto;
     }
     
@@ -1221,7 +1221,7 @@ padding: 5px;
     #logo_cart_navbar {
         position: relative;
         margin: 10px;
-        right: 290px;
+        right: 40px;
         bottom: 10px;
         height: 35px;
         width: 35px;
@@ -1233,8 +1233,14 @@ padding: 5px;
         right: 35px;
     
     
-    
     }
+
+    #cart_nav{
+      left: 0px;
+      right: 0px;
+      margin-left: -85px;
+    }
+    
     
     #search_input>svg{
     background: rgb(255, 0, 0);
@@ -1242,6 +1248,8 @@ padding: 5px;
     height: 30px;
     position: relative;
     bottom: 9px;
+    margin-left: 10px;
+   
     }
     
     
@@ -1269,7 +1277,7 @@ padding: 5px;
     #total_cart {
         color: red;
         position: relative;
-        right: 346px;
+        right: 12px;
         bottom: 10px;
     }
     
@@ -1278,7 +1286,7 @@ padding: 5px;
         position: relative;
         top: 20px;
         cursor: pointer;
-    
+        
     }
     
     #account {
