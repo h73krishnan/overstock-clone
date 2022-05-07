@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>createAccountOrLogin</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            height: 700px;
+            width: 900px;
+            margin-top: 10px;
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+         
+
+        }
+
+        .container>div {
+           
+            padding: 50px;
+            margin-top: 10px;
+        }
+        .container>div:nth-child(1) {
+            border-right: 1px solid gray;
+            /* padding: 50px; */
+        }
+
+        .createpassdivs {
+            display: flex;
+           gap: 10px;
+
+            
+           
+        }
+
+        .createpassdivs>div>input {
+            height: 30px;
+            width: 150px;
+           margin-left: 5px;
+            /* border: 1px solid rgb(14, 36, 233); */
+            border-radius: 5px;
+
+        }
+
+        #emailofcr {
+            height: 40px;
+            width: 94%;
+            border-radius: 5px;
+
+        }
+
+        #logingmail{
+            height: 40px;
+            width: 94%;
+            border-radius: 4px;
+        }
+        #loginpasswd{
+            height: 40px;
+            width: 94%;
+            border-radius: 4px;
+        }
+        .submit_of_query>input{
+            height: 40px;
+            width: 94%;
+            text-align: center;
+            margin-top: 30px;
+            /* background-color: rgb(13, 122, 13); */
+            font-size: 2.5vh;
+            padding: 2px;
+            border-radius: 4px;
+        }
+       
+
+       
+
+        #sign_in{
+            height: 40px;
+            width: 95%;
+            margin-top: 40px;
+            border-radius: 5px;
+            font-size: 20px;
+            background-color: seagreen;
+            color: white;
+        }
+        #create_acc{
+            height: 40px;
+            width: 95%;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-size: 20px;
+            color:white;
+            background-color: #0272a2;
+            
+        }
+        #check_box{
+          margin-top: 30px;
+        }
+        #cas{
+            height: 40px;
+            width: 95%;
+            margin-top: 30px;
+            border-radius: 5px;
+            font-size: 20px;
+            color: dimgray;
+
+
+        }
+        @media only screen and (min-width :0px) and (max-width:420px) {
+           .container {
+               grid-template-rows: 700px 600px;
+               grid-template-columns:1fr ;
+               width:90%;
+               height: 1400px;
+              
+
+            }
+            .container>div:nth-child(2){
+                margin-top: 20px;
+                border-top: 1px solid green;
+            }
+
+            .container>div:nth-child(1) {
+            border-right: 0px;
+            /* padding: 50px; */
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="create_account">
+
+            <h1>Create Account</h1>
+            <form onsubmit="myfun(event)" id="colectdetail">
+               <p>Email Address*</p>
+                <input id="emailofcr" type="email" placeholder="Email">
+
+                <div class="createpassdivs">
+                    <div>
+                       <p>Create Password</p>
+                       <input id="pass1" type="text" placeholder="Create password"> 
+                       
+                    </div>
+                  <div>
+                    <p>Confirm Password</p>
+                    <input id="pass2" type="passwd" placeholder="Confirm passeord">
+                  </div>
+                </div>
+                <div>
+                    <input type="checkbox" id="check_box" name="checkbox" >
+                    <label for="checkbox"> Sign up today for exclusive offers from Overstock.com delivered right to your inbox** </label><br>
+                    <!-- <p>Sign up to exclusive offers fron Overstock.com</p> -->
+
+                </div>
+                
+                <button type="submit" id="create_acc">Create Account</button>
+               <hr style="opacity: 0.2;">
+
+               <button id="cas">Continue as Guest</button>
+               <div>
+                   <p>By creating an account or continuing as a Guest, you agree to our Terms & Conditions and Privacy Policy.</p>
+               </div>
+               <div>
+                   <p>Terms & Conditions | Privacy Policy.
+
+                    **You can unsubscribe at any time</p>
+               </div>
+               
+            </form>
+
+
+        </div>
+        <div id="signindetail">
+
+            <h1>Sign In</h1>
+             <p>Email Address*</p>
+            <form id="loginform" action="submit">
+                <input id="logingmail" type="gmail" placeholder="Email">
+                <p>Password*</p>
+                <input id="loginpasswd" type="password" placeholder="Password">
+                <button id="sign_in">Sign In</button>
+            </form>
+           <a href="#" style="text-align: center;"> <h5>Forgot your password?</h5></a>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script>
+
+    let signupData = JSON.parse(localStorage.getItem("signupDetails")) || []
+
+    function myfun(e){
+        e.preventDefault();
+      
+
+        let email = document.getElementById("emailofcr").value
+        let passwordOne = document.getElementById("pass1").value
+        let passwordTwo = document.getElementById("pass2").value
+
+
+
+        if(passwordOne==="" || email==="" || passwordTwo==="") {
+        alert("Please fill all the input fields.");
+         }
+
+         else{
+
+                let obj = {
+     
+                  email : email,
+                  passwordOne : passwordOne, 
+                  passwordTwo : passwordTwo
+             }
+     
+           
+            //  console.log(obj)
+     
+             signupData.push(obj)
+             alert("Signup Succesfull")
+             localStorage.setItem("signupDetails",JSON.stringify(signupData));
+         }
+
+    }
+
+    function loginfun(){
+        event.preventDefault();
+        let data = JSON.parse(localStorage.getItem("signupDetails"));
+        let email = document.querySelector("#logingmail").value;
+        let password = document.querySelector("#loginpasswd").value;
+        var count=0;
+        for(var i = 0; i <data.length; i++) {
+
+            if(email===data[i].email)
+            {
+                count++;
+                if(password===data[i].passwordOne){
+                    count++
+                }
+              }
+            }
+            if(!count)alert("please create an account")
+            else if(count===1)alert("wrong password");
+            else alert("login successful");
+         
+        }
+
+
+
+</script>
