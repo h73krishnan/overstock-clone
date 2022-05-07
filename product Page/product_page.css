@@ -39,14 +39,12 @@ body {
 
 }
 
-#logo_search_navbar {
-    position: relative;
-    background: red;
-    fill: currentColor;
-    color: white;
-    padding: 10px;
-    height: 15px;
-
+#search_input>svg{
+background: rgb(255, 0, 0);
+width: 30px;
+height: 30px;
+position: relative;
+bottom: 9px;
 }
 
 
@@ -75,18 +73,21 @@ body {
     color: red;
     position: relative;
     right: 92px;
-    bottom: 20px;
+    bottom: 10px;
 }
 
 .nav_text {
     font-size: 13px;
     position: relative;
-    top: 10px;
+    top: 20px;
+    cursor: pointer;
 
 }
 
 #account {
     right: 70px;
+    background-color: transparent;
+    height: 20px;
 }
 
 #heart {
@@ -106,7 +107,7 @@ nav>hr {
 }
 
 #top_hr {
-    margin-top: -10px;
+    margin-top: -15px;
 }
 
 #top_bar {
@@ -116,8 +117,7 @@ nav>hr {
     font-size: small;
     color: rgba(0, 0, 0, 0.664);
     background: rgba(0, 0, 0, 0.055);
-    margin-top: -10px;
-    margin-bottom: -10px;
+    
 }
 
 #india_logo {
@@ -137,21 +137,34 @@ nav>hr {
 
 #navigate {
 
-    display: flex;
-    gap: 20px;
+   display: flex;
+   float: left;
+    gap: 30px;
     color: black;
-    width: 1140px;
-    margin: auto;
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+margin: auto;
 
+
+}
+
+#navigate>div>button:hover{
+text-decoration: underline;
 }
 
 #navigate>button {
-    padding: 5px;
+    display: inline-block;
     border: none;
-    background: white;
-    cursor: pointer;
+    background:transparent;
+    
     color: rgba(0, 0, 0, 0.753);
+    cursor: pointer;
+   
 }
+
+
+
 
 #search_input {
 
@@ -256,86 +269,12 @@ nav>hr {
     background: rgb(255, 255, 255);
 }
 
-
-/*nav btn css-----------------------------------/*
-
-
-/* Dropdown Button */
-.dropbtn-acc {
-
-    width: 45px;
-    cursor: pointer;
-    border: none;
-
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown-acc {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    left: 900px;
-    bottom: 100px;
-    height: 45px;
-
-    background-color: transparent;
-    color: transparent;
-}
-
-#dropbtn1_acc_nav {
-
-    position: relative;
-
-
-
-
-}
-
-#dropdown_content_acc_nav2 {
-
-    margin-top: 25px;
-
-}
-
-#dropdown_content_acc_nav1 {
-    margin-top: 25px;
-
+#hr_media{
+   margin-top: -0px;
+    
 }
 
 
-
-
-
-
-
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content-acc {
-    display: none;
-    position: absolute;
-    background: white;
-    min-width: 160px;
-    border: 1px solid rgba(0, 0, 0, 0.137);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content-acc a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content-acc a:hover {
-    background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown-acc:hover .dropdown-content-acc {
-    display: block;
-}
 
 #lock_btn {
     background-color: transparent;
@@ -356,15 +295,10 @@ nav>hr {
     position: relative;
     left: 1065px;
     font-size: 12px;
-    top: 50px;
+    top: 55px;
 }
 
-#hr_media {
 
-
-    margin-top: -40px;
-
-}
 
 #hr_media2 {
 
@@ -380,761 +314,373 @@ nav>hr {
 }
 
 
+#hidden{
+    display: inline-flex;
+    
+    position: absolute;
+    gap: 40px;
+    left: 895px;
+    
 }
 
-@media only screen and (max-width: 800px) and (min-width: 401px){
+#hidden>div{
+    margin-top: -90px;
+    cursor: pointer;
+}
 
-    
-
-    body {
-        font-family: sans-serif;
-    
-        width: 100%;
-    
-        margin: auto;
-    
-    }
-    
-    
-    #navbar>svg {
-        display: inline-block;
-    }
-    
-    #logo_navbar {
-        position: relative;
-    
-    
-    }
-    
-    #logo_cart_navbar {
-        position: relative;
-        margin: 10px;
-        right: 35px;
-        bottom: 10px;
-        height: 35px;
-        width: 35px;
-    
-    }
-    
-    #logo_heart_navbar {
-        position: relative;
-        right: 35px;
-    
-    
-    
-    }
-    
-    #logo_search_navbar {
-        position: relative;
-        background: red;
-        fill: currentColor;
-        color: white;
-        padding: 10px;
-        height: 15px;
-    
-    }
-    
-    
-    
-    
-    
-    #navbar>svg {
-        cursor: pointer;
-    }
-    
-    #logo_person_navbar {
-        position: relative;
-        right: 35px;
-    
-    }
-    
-    #nav_div {
-        display: flex;
-    
-        float: right;
-        width: 200px;
-        height: 50px;
-    }
-    
-    #total_cart {
-        color: red;
-        position: relative;
-        right: 92px;
-        bottom: 20px;
-    }
-    
-    .nav_text {
-        font-size: 13px;
-        position: relative;
-        top: 10px;
-    
-    }
-    
-    #account {
-        right: 70px;
-    }
-    
-    #heart {
-        right: 60px;
-    }
-    
-    svg {
-        cursor: pointer;
-    }
-    
-    #cart_nav {
-        right: 76px;
-    }
-    
-    nav>hr {
-        margin-top: 20px;
-    }
-    
-    #top_hr {
-        margin-top: -10px;
-    }
-    
-    #top_bar {
-        display: block;
-        margin: 1px;
-        font-weight: lighter;
-        font-size: small;
-        color: rgba(0, 0, 0, 0.664);
-        background: rgba(0, 0, 0, 0.055);
-        margin-top: -10px;
-        margin-bottom: -10px;
-    }
-    
-    #india_logo {
-        height: 25px;
-        border-radius: 50%;
-        margin-bottom: -5px;
-        cursor: pointer;
-    }
-    
-    #searchbar {
-        position: absolute;
-        border: none;
-        text-decoration: none;
-    
-        background: rgba(0, 0, 0, 0.055);
-    }
-    
-    #navigate {
-    
-        display: flex;
-        gap: 20px;
-        color: black;
-        width: 1140px;
-        margin: auto;
-    
-    }
-    
-    #navigate>button {
-        padding: 5px;
-        border: none;
-        background: white;
-        cursor: pointer;
-        color: rgba(0, 0, 0, 0.753);
-    }
-    
-    #search_input {
-    
-        position: relative;
-        width: 525px;
-        margin: auto;
-        height: 40px;
-        bottom: 38px;
-        justify-items: center;
-        font-size: 40px;
-    
-    
-    }
-    
-    #search_input>input {
-        border: 1px solid rgba(0, 0, 0, 0.267);
-    
-        width: 90%;
-        height: 30px;
-        position: relative;
-        bottom: 10px;
-        font-size: 20px;
-        margin-left: -20px;
-        margin-right: -20px;
-        background: rgba(167, 167, 167, 0.055);
-        padding-left: 10px;
-    }
-    
-    
-    
-    
-    .btn_hover:hover {
-        text-decoration: underline;
-    
-    }
-    
-    .p_1 {
-    
-        font-size: 12px;
-        color: rgba(0, 0, 0, 0.733);
-        margin: 20px;
-        margin-top: 30px;
-    }
-    
-    .home {
-        display: flex;
-    
-        width: 1100px;
-        margin: auto;
-    }
-    
-    #box1 {
-    
-        padding: 20px;
-    }
-    
-    #box1>img {
-        width: 275px;
-        margin: auto;
-        margin-bottom: 15px;
-    }
-    
-    
-    
-    
-    #box1>h3 {
-    
-        width: 260px;
-        margin: auto;
-        font-size: 20px;
-    }
-    
-    
-    #box1>p {
-    
-        width: 250px;
-        font-weight: lighter;
-        font-size: 16px;
-        line-height: 23px;
-        margin: auto;
-        margin-top: 15px;
-    }
-    
-    #locate_drop {
-    
-        width: 250px;
-    }
-    
-    #cross_box {
-        height: 10px;
-    }
-    
-    #btn_svgcross {
-        height: 40px;
-        border-radius: 50px;
-        font-size: 18px;
-        background: white;
-        margin-top: -40px;
-    }
-    
-    #btn_svgcross:hover {
-        background: rgb(255, 255, 255);
-    }
-    
-    
-    /*nav btn css-----------------------------------/*
-    
-    
-    /* Dropdown Button */
-    .dropbtn-acc {
-    
-        width: 45px;
-        cursor: pointer;
-        border: none;
-    
-    }
-    
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown-acc {
-        position: relative;
-        display: inline-block;
-        cursor: pointer;
-        left: 900px;
-        bottom: 100px;
-        height: 45px;
-    
-        background-color: transparent;
-        color: transparent;
-    }
-    
-    #dropbtn1_acc_nav {
-    
-        position: relative;
-    
-    
-    
-    
-    }
-    
-    #dropdown_content_acc_nav2 {
-    
-        margin-top: 25px;
-    
-    }
-    
-    #dropdown_content_acc_nav1 {
-        margin-top: 25px;
-    
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content-acc {
-        display: none;
-        position: absolute;
-        background: white;
-        min-width: 160px;
-        border: 1px solid rgba(0, 0, 0, 0.137);
-        z-index: 1;
-    }
-    
-    /* Links inside the dropdown */
-    .dropdown-content-acc a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    
-    /* Change color of dropdown links on hover */
-    .dropdown-content-acc a:hover {
-        background-color: #ddd;
-    }
-    
-    /* Show the dropdown menu on hover */
-    .dropdown-acc:hover .dropdown-content-acc {
-        display: block;
-    }
-    
-    #lock_btn {
-        background-color: transparent;
-        border: none;
-        position: relative;
-        bottom: 77px;
-        width: 80px;
-        font-size: 10px;
-        border-radius: 5px;
-        left: 1055px;
-        height: 30px;
-    
-    }
-    
-    
-    #checkout_nav {
-        display: inline-block;
-        position: relative;
-        left: 1065px;
-        font-size: 12px;
-        top: 50px;
-    }
-    
-    #hr_media {
-    
-    
-        margin-top: -40px;
-    
-    }
-    
-    #hr_media2 {
-    
-    
-        margin-bottom: -0px;
-        margin-top: -40px;
-    
-    }
-    
-    #box2 > img{
-        height:330px;
-         width:780px;
-    }
-    
-
-    #navbar>svg {
-        display: inline-block;
-    }
-
-    #logo_navbar {
-        position: relative;
-
-
-    }
-
-    #logo_cart_navbar {
-        position: relative;
-        margin: 10px;
-        right: 35px;
-        bottom: 10px;
-        height: 35px;
-        width: 35px;
-
-    }
-
-    #logo_heart_navbar {
-        position: relative;
-        right: 35px;
-
-
-
-    }
-
-    #logo_search_navbar {
-        position: relative;
-        background: red;
-
-        color: white;
-        padding: 10px;
-        height: 15px;
-
-    }
-
-
-
-
-
-    #navbar>svg {
-        cursor: pointer;
-    }
-
-    #logo_person_navbar {
-        position: relative;
-        right: 35px;
-
-    }
-
-    #nav_div {
-        display: flex;
-
-        float: right;
-        width: 200px;
-        height: 50px;
-    }
-
-    #total_cart {
-        color: red;
-        position: relative;
-        right: 92px;
-        bottom: 20px;
-    }
-
-    .nav_text {
-        font-size: 13px;
-        position: relative;
-        top: 10px;
-
-    }
 
-    #account {
-        right: 70px;
-    }
-
-    #heart {
-        right: 60px;
-    }
-
-    svg {
-        cursor: pointer;
-    }
-
-    #cart_nav {
-        right: 76px;
-    }
-
-    nav>hr {
-        margin-top: 20px;
-    }
-
-    #top_hr {
-        margin-top: 0px;
-    }
-
-    #top_bar {
-        display: block;
-        margin: 1px;
-        font-weight: lighter;
-        font-size: small;
-        color: rgba(0, 0, 0, 0.664);
-        background: rgba(0, 0, 0, 0.055);
-        margin-top: -10px;
-        margin-bottom: -10px;
-    }
-
-    #india_logo {
-        height: 25px;
-        border-radius: 50%;
-        margin-bottom: -5px;
-        cursor: pointer;
-    }
-
-    #searchbar {
-        position: absolute;
-        border: none;
-        text-decoration: none;
-
-        background: rgba(0, 0, 0, 0.055);
-    }
-
-    #navigate {
-
-        display: flex;
-        gap: 20px;
-        color: black;
-        width: 100%;
-        margin: auto;
-        position: relative;
-        top: 65px;
-        flex-wrap: wrap;
-    }
-
-    #navigate>button {
-        padding: 5px;
-        border: none;
-        background: white;
-        cursor: pointer;
-        color: rgba(0, 0, 0, 0.753);
-    }
-
-    #search_input {
-
-        position: relative;
-        width: 400px;
-        margin: auto;
-        height: 40px;
-        bottom: 0px;
-        justify-items: center;
-        font-size: 40px;
-
-
-    }
-
-    #search_input>input {
-        border: 1px solid rgba(0, 0, 0, 0.267);
-
-        width: 90%;
-        height: 30px;
-        position: relative;
-        bottom: 10px;
-        font-size: 20px;
-        margin-left: -20px;
-        margin-right: -20px;
-        background: rgba(167, 167, 167, 0.055);
-        padding-left: 10px;
-
-    }
-
-
-
-
-    .btn_hover:hover {
-        text-decoration: underline;
-
-    }
-
-    .p_1 {
-
-        font-size: 12px;
-        color: rgba(0, 0, 0, 0.733);
-        margin: 20px;
-        margin-top: 30px;
-    }
-
-    .home {
-        display: flex;
-
-        width: 1100px;
-        margin: auto;
-    }
-
-    #box1 {
-
-        padding: 20px;
-    }
-
-    #box1>img {
-        width: 275px;
-        margin: auto;
-        margin-bottom: 15px;
-    }
-
-    #box2 > img{
-        width:175px;
-         height: auto;
-    }
-
-
-
-
-    #box1>h3 {
-
-        width: 260px;
-        margin: auto;
-        font-size: 20px;
-    }
-
-
-    #box1>p {
-
-        width: 250px;
-        font-weight: lighter;
-        font-size: 16px;
-        line-height: 23px;
-        margin: auto;
-        margin-top: 15px;
-    }
-
-    #locate_drop {
-
-        width: 250px;
-    }
-
-    #cross_box {
-        height: 10px;
-    }
-
-    #btn_svgcross {
-        height: 40px;
-        border-radius: 50px;
-        font-size: 18px;
-        background: white;
-        margin-top: -40px;
-    }
-
-    #btn_svgcross:hover {
-        background: rgb(255, 255, 255);
-    }
-
-
-    /*nav btn css-----------------------------------/*
+.dropbtnacc {
+  
+    color: transparent;
     
-    
-    /* Dropdown Button */
-    .dropbtn-acc {
-        
-        width: 45px;
-        cursor: pointer;
-        border: none;
-        
-    }
-
-  #hidden{
-      visibility: hidden;
+   
+    border: none;
   }
 
+  .dropbtnacc:hover {
+  
+    color: white;
+    
+    
+    border: none;
+  }
+  
+  .dropdownacc {
+    position: relative;
+    display: inline-block;
+    
+    height:30px;
+    width:30px;
+  }
+  
+  .dropdown-contentacc {
+    display: none;
+    position: absolute;
+    border:1px solid rgba(0, 0, 0, 0.185);
+    width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size:14px;
+    background-color: white;
+    top: 30px;
+  }
+  
+  .dropdown-contentacc a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-contentacc a:hover {background-color: #ddd;}
+  
+  .dropdownacc:hover .dropdown-contentacc {display: block;}
+  
+  .dropdownacc:hover .dropbtnacc {background-color: #3e8e41;}
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #ffffff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content table:hover {
+    background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+
+
+.btn_price {
+    background: white;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 8px;
+    margin: 5px;
+    border: 1px solid rgb(99, 99, 99);
+    cursor: text;
+}
+
+.apply {
+    width: 100%;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#table{
+    display: grid;
  
+    gap: 20px;
+    grid-template-columns: 200px 200px 200px 200px;
 
-
-
-    /* The container <div> - needed to position the dropdown content */
-
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown-acc{ 
-        
-        border: 1px solid green;
-        position: absolute;
-        cursor: pointer;
-        height: 45px;
-        width: 40px;
-    }
+}
 
 
 
 
-
-
+/* Dropdown Button */
+.dropbtnnav {
+    display: inline-block;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
 
 
 
 
 
 
+/* Dropdown button on hover & focus */
+.dropbtnnav:hover,
+.dropbtnnav:focus {
+    background-color: #ffffff;
+}
 
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content-acc {
-        display: none;
-        position: absolute;
-        background: white;
-        min-width: 160px;
-        border: 1px solid rgba(0, 0, 0, 0.137);
-        z-index: 1;
-    }
+/* The container <div> - needed to position the dropdown content */
+.dropdownnav {
+    position: relative;
+    display: inline-block;
+}
 
-    /* Links inside the dropdown */
-    .dropdown-content-acc a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content_nav {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
 
-    /* Change color of dropdown links on hover */
-    .dropdown-content-acc a:hover {
-        background-color: #ddd;
-    }
+/* Links inside the dropdown */
+.dropdown-content_nav div {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
 
-    /* Show the dropdown menu on hover */
-    .dropdown-acc:hover .dropdown-content-acc {
-        display: block;
-    }
-
-    #lock_btn {
-        background-color: transparent;
-        border: none;
-        position: relative;
-        bottom: 77px;
-        width: 80px;
-        font-size: 10px;
-        border-radius: 5px;
-        left: 420px;
-        height: 30px;
-
-    }
+/* Change color of dropdown links on hover */
 
 
-    #checkout_nav {
-        display: inline-block;
-        position: relative;
-        left: 430px;
-        font-size: 12px;
-        top: 50px;
-    }
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+.nav_div > div{
+font-size: 13px;
+margin: 0;
+padding: 5px;
+}
+
+#myDropdownm5{
+    
+    margin-left: -100px;
+}
+
+#myDropdownm5 > div{
+    cursor: pointer;
+}
+
+#myDropdownm5 > div>div>div:hover{
+    text-decoration: underline;
+}
 
 
 
-    #hr_media2 {
-        position: relative;
-        top: 60px;
+
+#myDropdownm4 > div{
+    cursor: pointer;
+}
+
+#myDropdownm4 > div>div>div:hover{
+    text-decoration: underline;
+}
 
 
-    }
+#myDropdownm3 > div{
+    cursor: pointer;
+}
 
-    #navbar {
+#myDropdownm3 > div>div>div:hover{
+    text-decoration: underline;
+}
 
-        height: 300px;
+#myDropdownm2 > div{
+    cursor: pointer;
+}
 
-    }
+#myDropdownm2 > div>div>div:hover{
+    text-decoration: underline;
+}
 
-    body{
-       
-        width: 500px;
-       
+#myDropdownm1 > div{
+    cursor: pointer;
+}
 
-        
-    }
+#myDropdownm1 > div>div>div:hover{
+    text-decoration: underline;
+}
+
+
+#myDropdownm6{
+    
+    margin-left: -300px;
+}
+
+#myDropdownm6 > div{
+    cursor: pointer;
+}
+
+#myDropdownm6 > div>div>div:hover{
+    text-decoration: underline;
+}
+
+#myDropdownm7{
+    left: -400px;
+}
+
+#myDropdownm7 > div{
+    cursor: pointer;
+}
+
+#myDropdownm7 > div>div>div:hover{
+    text-decoration: underline;
+}
+
+#myDropdownm8{
+    left: -450px;
+}
+
+#myDropdownm8 > div{
+    cursor: pointer;
+}
+
+#myDropdownm8 > div>div>div:hover{
+    text-decoration: underline;
+}
+
+#myDropdownm9{
+    left: -550px;
+}
+
+#myDropdownm9 > div{
+    cursor: pointer;
+}
+
+#myDropdownm9 > div>div>div:hover{
+    text-decoration: underline;
+}
+
+#myDropdownm10{
+    left: -700px;
+}
+
+#myDropdownm10 > div{
+    cursor: pointer;
+}
+
+#myDropdownm10 > div>div>div:hover{
+    text-decoration: underline;
+}
+
+#myDropdownm11{
+    left: -750px;
+}
+
+#myDropdownm11 > div{
+    cursor: pointer;
+}
+
+#myDropdownm11 > div>div>div:hover{
+    text-decoration: underline;
+}
+
+#myDropdownm12{
+    left: -800px;
+}
+
+#myDropdownm12 > div{
+    cursor: pointer;
+}
+
+#myDropdownm12 > div>div>div:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 800px) and (min-width: 401px){
+    
 
     #account{
         visibility: hidden;
@@ -1162,54 +708,30 @@ nav>hr {
         
         padding-bottom: -100px;
     }
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 400px) and (min-width: 40px){
+    #hidden{
+        visibility: hidden;
+    }
 
 
     body {
         font-family: sans-serif;
     
-        width: 100%;
+        width: 655px;
     
         margin: auto;
-    
+        
     }
     
+    #fix{
+        width: 655px;
+    
+    }
+   
+
+    #navbar{
+        
+        width: 100%;
+    }
     
     #navbar>svg {
         display: inline-block;
@@ -1239,14 +761,12 @@ nav>hr {
     
     }
     
-    #logo_search_navbar {
-        position: relative;
-        background: red;
-        fill: currentColor;
-        color: white;
-        padding: 10px;
-        height: 15px;
-    
+    #search_input>svg{
+    background: rgb(255, 0, 0);
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 9px;
     }
     
     
@@ -1275,18 +795,21 @@ nav>hr {
         color: red;
         position: relative;
         right: 92px;
-        bottom: 20px;
+        bottom: 10px;
     }
     
     .nav_text {
         font-size: 13px;
         position: relative;
-        top: 10px;
+        top: 20px;
+        cursor: pointer;
     
     }
     
     #account {
         right: 70px;
+        background-color: transparent;
+        height: 20px;
     }
     
     #heart {
@@ -1316,8 +839,7 @@ nav>hr {
         font-size: small;
         color: rgba(0, 0, 0, 0.664);
         background: rgba(0, 0, 0, 0.055);
-        margin-top: -10px;
-        margin-bottom: -10px;
+        
     }
     
     #india_logo {
@@ -1331,7 +853,7 @@ nav>hr {
         position: absolute;
         border: none;
         text-decoration: none;
-    
+        bottom: 20px;
         background: rgba(0, 0, 0, 0.055);
     }
     
@@ -1372,14 +894,18 @@ nav>hr {
         width: 90%;
         height: 30px;
         position: relative;
-        bottom: 10px;
+        
         font-size: 20px;
         margin-left: -20px;
         margin-right: -20px;
         background: rgba(167, 167, 167, 0.055);
         padding-left: 10px;
+        top: 20px;
     }
     
+    #search_input>svg{
+        top: 21px;
+    }
     
     
     
@@ -1456,86 +982,12 @@ nav>hr {
         background: rgb(255, 255, 255);
     }
     
-    
-    /*nav btn css-----------------------------------/*
-    
-    
-    /* Dropdown Button */
-    .dropbtn-acc {
-    
-        width: 45px;
-        cursor: pointer;
-        border: none;
-    
-    }
-    
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown-acc {
+    #hr_media{
         position: relative;
-        display: inline-block;
-        cursor: pointer;
-        left: 900px;
-        bottom: 100px;
-        height: 45px;
-    
-        background-color: transparent;
-        color: transparent;
-    }
-    
-    #dropbtn1_acc_nav {
-    
-        position: relative;
-    
-    
-    
-    
-    }
-    
-    #dropdown_content_acc_nav2 {
-    
-        margin-top: 25px;
-    
-    }
-    
-    #dropdown_content_acc_nav1 {
-        margin-top: 25px;
-    
+        top: 30px;
     }
     
     
-    
-    
-    
-    
-    
-    
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content-acc {
-        display: none;
-        position: absolute;
-        background: white;
-        min-width: 160px;
-        border: 1px solid rgba(0, 0, 0, 0.137);
-        z-index: 1;
-    }
-    
-    /* Links inside the dropdown */
-    .dropdown-content-acc a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    
-    /* Change color of dropdown links on hover */
-    .dropdown-content-acc a:hover {
-        background-color: #ddd;
-    }
-    
-    /* Show the dropdown menu on hover */
-    .dropdown-acc:hover .dropdown-content-acc {
-        display: block;
-    }
     
     #lock_btn {
         background-color: transparent;
@@ -1545,7 +997,7 @@ nav>hr {
         width: 80px;
         font-size: 10px;
         border-radius: 5px;
-        left: 1055px;
+        left: 570px;
         height: 30px;
     
     }
@@ -1554,9 +1006,9 @@ nav>hr {
     #checkout_nav {
         display: inline-block;
         position: relative;
-        left: 1065px;
+        left: 580px;
         font-size: 12px;
-        top: 50px;
+        top: 55px;
     }
     
     #hr_media {
@@ -1566,177 +1018,82 @@ nav>hr {
     
     }
     
-    #hr_media2 {
     
-    
-        margin-bottom: -0px;
-        margin-top: -40px;
-    
-    }
     
     #box2 > img{
-        height:330px;
-         width:780px;
+        height:100px;
+         width:auto;
     }
     
-
-
-
-    #logo_person_navbar{
-        visibility: hidden;
-    }
-    #account{
-        visibility: hidden;
-    }
-    #heart{
-        visibility: hidden;
-    }
-    #logo_heart_navbar{
-        visibility: hidden;
-    }
-    #navigate{
-        visibility: hidden;
-    }
-    #hr_media{
-        visibility: visible;
-    }
-   #box2{
-       visibility: hidden;
-   }
-   #fix{
-       
-       width: 390px;
-       
-   }
-   #lock_btn {
-    background-color: transparent;
-    border: none;
-    position: relative;
-    bottom: 77px;
-    width: 80px;
-    font-size: 10px;
-    border-radius: 5px;
-    left: 310px;
-    height: 30px;
-
-}
-
-
-#checkout_nav {
-    display: inline-block;
-    position: relative;
-    left: 320px;
-    font-size: 12px;
-    top: 50px;
-}
-
-#search_input{
-width: 250px;
-}
-#search_input{
-    visibility: hidden;
-}
-#logo_search_navbar{
-    visibility: visible;
-    bottom: 60px;
-    left: 150px;
-
-}
-#hr_media2{
-    visibility: hidden;
+    
+    
+    
    
-}
-#navbar{
     
-    height: 100px;
     
-}
- body{
-     
-     width: 100%;
- }
- 
-
-   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .dropbtnacc {
+      
+        color: white;
+        
+        
+        border: none;
+      }
+      
+      .dropdownacc {
+        position: relative;
+        display: inline-block;
+        
+        height:30px;
+        width:30px;
+      }
+      
+      .dropdown-contentacc {
+        display: none;
+        position: absolute;
+        border:1px solid rgba(0, 0, 0, 0.185);
+        width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size:14px;
+        background-color: white;
+      }
+      
+      .dropdown-contentacc a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-contentacc a:hover {background-color: #ddd;}
+      
+      .dropdownacc:hover .dropdown-contentacc {display: block;}
+      
+      .dropdownacc:hover .dropbtnacc {background-color: #3e8e41;}
+    
+      html,body {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+        }
+    
+        
 
 /* Dropdown Button */
 .dropbtn {
-
+    display: inline-block;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     padding: 10px;
-    font-size: 16px;
+    font-size: 13px;
     border: none;
     cursor: pointer;
 }
 
 
-.dropbtn>button {
 
-    border: 1px solid red;
-}
+
+
 
 /* Dropdown button on hover & focus */
 .dropbtn:hover,
@@ -1758,6 +1115,7 @@ width: 250px;
     min-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    
 }
 
 /* Links inside the dropdown */
@@ -1769,7 +1127,479 @@ width: 250px;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {
+.dropdown-content table:hover {
+    background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 400px) and (min-width: 40px){
+
+
+    #account{
+        visibility: hidden;
+    }
+    
+    
+    #logo_person_navbar{
+        visibility: hidden;
+    }
+
+    #heart{
+        visibility: hidden;
+    }
+    #logo_heart_navbar{
+        visibility: hidden;
+    }
+    #navigate{
+        visibility: hidden;
+    }
+    #hr_media{
+        visibility: hidden;
+    }
+    #navbar{
+        height: 130px;
+        
+        padding-bottom: -100px;
+    }
+    #hidden{
+        visibility: hidden;
+    }
+
+
+    body {
+        font-family: sans-serif;
+    
+        width: 655px;
+    
+        margin: auto;
+        
+    }
+    
+    #fix{
+        width: 655px;
+    
+    }
+   
+
+    #navbar{
+        
+        width: 100%;
+    }
+    
+    #navbar>svg {
+        display: inline-block;
+    }
+    
+    #logo_navbar {
+        position: relative;
+    
+    
+    }
+    
+    #logo_cart_navbar {
+        position: relative;
+        margin: 10px;
+        right: 290px;
+        bottom: 10px;
+        height: 35px;
+        width: 35px;
+    
+    }
+    
+    #logo_heart_navbar {
+        position: relative;
+        right: 35px;
+    
+    
+    
+    }
+    
+    #search_input>svg{
+    background: rgb(255, 0, 0);
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 9px;
+    }
+    
+    
+    
+    
+    
+    #navbar>svg {
+        cursor: pointer;
+    }
+    
+    #logo_person_navbar {
+        position: relative;
+        right: 35px;
+    
+    }
+    
+    #nav_div {
+        display: flex;
+    
+        float: right;
+        width: 200px;
+        height: 50px;
+    }
+    
+    #total_cart {
+        color: red;
+        position: relative;
+        right: 346px;
+        bottom: 10px;
+    }
+    
+    .nav_text {
+        font-size: 13px;
+        position: relative;
+        top: 20px;
+        cursor: pointer;
+    
+    }
+    
+    #account {
+        right: 70px;
+        background-color: transparent;
+        height: 20px;
+    }
+    
+    #heart {
+        right: 60px;
+    }
+    
+    svg {
+        cursor: pointer;
+    }
+    
+    #cart_nav {
+        right: 330px;
+    }
+    
+    nav>hr {
+        margin-top: 20px;
+    }
+    
+    #top_hr {
+        margin-top: -10px;
+    }
+    
+    #top_bar {
+        display: block;
+        margin: 1px;
+        font-weight: lighter;
+        font-size: small;
+        color: rgba(0, 0, 0, 0.664);
+        background: rgba(0, 0, 0, 0.055);
+        
+    }
+    
+    #india_logo {
+        height: 25px;
+        border-radius: 50%;
+        margin-bottom: -5px;
+        cursor: pointer;
+    }
+    
+    #searchbar {
+        position: absolute;
+        border: none;
+        text-decoration: none;
+        bottom: 20px;
+        background: rgba(0, 0, 0, 0.055);
+    }
+    
+    #navigate {
+    
+        display: flex;
+        gap: 20px;
+        color: black;
+        width: 1140px;
+        margin: auto;
+    
+    }
+    
+    #navigate>button {
+        padding: 5px;
+        border: none;
+        background: white;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.753);
+    }
+    
+    #search_input {
+    
+        position: relative;
+        width: 525px;
+        margin: auto;
+        height: 40px;
+        bottom: 38px;
+        justify-items: center;
+        font-size: 40px;
+    
+    
+    }
+    
+    #search_input>input {
+        
+        visibility: hidden;
+    }
+    
+    #search_input>svg{
+       bottom: 35px;
+       right: 300px;
+    }
+    
+    
+    
+    .btn_hover:hover {
+        text-decoration: underline;
+    
+    }
+    
+    .p_1 {
+    
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0.733);
+        margin: 20px;
+        margin-top: 30px;
+    }
+    
+    .home {
+        display: flex;
+    
+        width: 1100px;
+        margin: auto;
+    }
+    
+    #box1 {
+    
+        padding: 20px;
+    }
+    
+    #box1>img {
+        width: 275px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    
+    
+    
+    
+    #box1>h3 {
+    
+        width: 260px;
+        margin: auto;
+        font-size: 20px;
+    }
+    
+    
+    #box1>p {
+    
+        width: 250px;
+        font-weight: lighter;
+        font-size: 16px;
+        line-height: 23px;
+        margin: auto;
+        margin-top: 15px;
+    }
+    
+    #locate_drop {
+    
+        width: 250px;
+    }
+    
+    #cross_box {
+        height: 10px;
+    }
+    
+    #btn_svgcross {
+        height: 40px;
+        border-radius: 50px;
+        font-size: 18px;
+        background: white;
+        margin-top: -40px;
+    }
+    
+    #btn_svgcross:hover {
+        background: rgb(255, 255, 255);
+    }
+    
+    #hr_media{
+        position: relative;
+        top: 30px;
+    }
+    
+    
+    
+    #lock_btn {
+        background-color: transparent;
+        border: none;
+        position: relative;
+        bottom: 77px;
+        width: 80px;
+        font-size: 10px;
+        border-radius: 5px;
+        left: 320px;
+        height: 30px;
+    
+    }
+    
+    
+    #checkout_nav {
+        display: inline-block;
+        position: relative;
+        left: 330px;
+        font-size: 12px;
+        top: 55px;
+    }
+    
+    #hr_media {
+    
+    
+        margin-top: -40px;
+    
+    }
+    
+    
+    
+    #box2 > img{
+        height:100px;
+         width:auto;
+    }
+    
+    
+    
+    
+   
+    
+    
+    .dropbtnacc {
+      
+        color: white;
+        
+        
+        border: none;
+      }
+      
+      .dropdownacc {
+        position: relative;
+        display: inline-block;
+        
+        height:30px;
+        width:30px;
+      }
+      
+      .dropdown-contentacc {
+        display: none;
+        position: absolute;
+        border:1px solid rgba(0, 0, 0, 0.185);
+        width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        font-size:14px;
+        background-color: white;
+      }
+      
+      .dropdown-contentacc a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-contentacc a:hover {background-color: #ddd;}
+      
+      .dropdownacc:hover .dropdown-contentacc {display: block;}
+      
+      .dropdownacc:hover .dropbtnacc {background-color: #3e8e41;}
+    
+      html,body {
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+        }
+    
+        #box2{
+            visibility: hidden;
+        }
+
+       
+    
+
+
+/* Dropdown Button */
+.dropbtn {
+    display: inline-block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #ffffff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content table:hover {
     background-color: #ddd
 }
 
@@ -1784,31 +1614,8 @@ width: 250px;
 
 
 
+ 
 
-
-
-
-
-
-
-
-
-.btn_price {
-    background: white;
-    border-radius: 5px;
-    font-size: 15px;
-    padding: 8px;
-    margin: 5px;
-    border: 1px solid rgb(99, 99, 99);
-    cursor: text;
+   
 }
 
-.apply {
-    width: 100%;
-    font-size: 15px;
-    padding: 8px;
-    border-radius: 5px;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-}
