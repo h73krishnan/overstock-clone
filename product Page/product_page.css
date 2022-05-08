@@ -1138,8 +1138,10 @@ padding: 5px;
     display: block;
 }
 
-
-    
+#dropdiv{
+    border: 1px solid red;
+    width: 200px;
+}
 
 
 

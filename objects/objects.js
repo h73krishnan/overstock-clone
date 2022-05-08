@@ -340,7 +340,7 @@ let prodArr = [
     desc: "Bring a touch of class into your kitchen with the Farberware 1.2 Cubic Foot 1100 Watt Large Microwave Oven with Grill Function in Stainless Stee",
     info: { reviews: 249, discount: 10, brand: "Farberware", availability: true, style: 'Oriental ' }
   },
-
+ 
 
 
 
@@ -375,6 +375,7 @@ let prodArr = [
 
 
   var productdiv=document.getElementById("append_products")
+
 
 prodArr.map((elem)=>{
 
@@ -424,7 +425,7 @@ title.innerText=elem.name
 
 
 })
-
+  
 
 
 var sortproductdiv=document.getElementById("sort_appenddiv")
