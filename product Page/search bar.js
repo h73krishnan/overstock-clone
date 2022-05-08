@@ -9,7 +9,7 @@ searchbar.addEventListener("click", showdiv);
 var inputdiv = document.getElementById("inputdiv")
 
 function showdiv() {
-    document.getElementById("navigate").innerHTML = null
+    
     inputdiv.innerHTML = null
     var div = document.createElement("div");
     div.setAttribute("id","appendsearch")
@@ -27,9 +27,7 @@ function showdiv() {
 
 
 
-function pagereload() {
-    window.location.reload()
-}
+
 
 
 
@@ -166,6 +164,15 @@ var saladimg=[
 
 
 searchbar.addEventListener("input", (e)=>{
+
+    inputdiv.style.display="block";
+    window.onkeyup=()=>{
+        if(event.keyCode==27){
+            inputdiv.style.display="none";
+        }
+    }
+
+    
     document.getElementById("appendsearch").innerHTML=null
     var value=e.target.value.toLowerCase();
     var arr=searchdatabtn.filter((char)=>{
