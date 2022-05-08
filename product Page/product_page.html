@@ -12,6 +12,7 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="search bar.css">
 </head>
 
 <body>
@@ -97,12 +98,13 @@
             </div>
 
 
-            <div id="search_input"><input type="text" id="serachbar" placeholder="Search">
-                <svg width="22" height="22" viewBox="0 0 24 24" stroke="#2F3337" fill="#FFFFFF">
+            <div id="search_input"><input type="text" id="searchbar" placeholder="Search">
+                <svg onclick="pagereload()" width="22" height="22" viewBox="0 0 24 24" stroke="#2F3337" fill="#FFFFFF">
                     <title>Search</title>
                     <path d="M22 22l-6.344-6.344M10 18a8 8 0 100-16 8 8 0 000 16z" stroke="inherit" fill="none"
                         stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                 </svg>
+                <div id="inputdiv"></div>
             </div>
 
             <button id="lock_btn"><svg stroke-width="0" class="Checkout_lockSVG_27" width="24" height="24"
@@ -1785,13 +1787,16 @@
             <div id="myDropdownsort" class="dropdown-content" style="margin-top: 50px;">
                 <a href="#">Best Selling  </a>
                 <a href="#" onclick="sortlh()">Price Low-high</a>
-                <a href="#">price High-low</a>
-                <a href="#">Customers Rating</a>
+                <a href="#" onclick="sorthl()">price High-low</a>
+                <a href="#" onclick="sortcustom()">Customers Rating</a>
 
             </div>
         </div>
         </div>
-<div class="home" id="append_products">
+<div class="home" id="sort_appenddiv">
+    <div id="append_products">
+        
+    </div>
 
     
 
@@ -1816,6 +1821,7 @@
 
 
 <script src="/objects/objects.js"></script>
+<script src="search bar.js"></script>
 
 </body>
 
