@@ -391,7 +391,7 @@ prodArr.map((elem)=>{
 
 
 var reviews=document.createElement("button");
-reviews.innerText=elem.info.reviews;
+reviews.innerText="❤️"+elem.info.reviews;
 
 
 
@@ -409,7 +409,7 @@ title.innerText=elem.name
    var btndiv=document.createElement("div");
 
    var btn=document.createElement("button");
-   btn.innerText="Detail";
+   btn.innerText="$"+elem.price;
 
    btndiv.append(btn)
 
@@ -427,9 +427,11 @@ title.innerText=elem.name
 
 
 
+var sortproductdiv=document.getElementById("sort_appenddiv")
 
 
 function sortlh(){
+  
   prodArr.sort((a, b) => {
     a=a.price;
     
@@ -439,10 +441,9 @@ function sortlh(){
     return a - b;
 });
 
-
-
-
 var sortproductdiv=document.getElementById("sort_appenddiv")
+sortproductdiv.innerHTML=null
+
 
   
 
@@ -475,7 +476,7 @@ prodArr.map((elem)=>{
 
 
 var reviews=document.createElement("button");
-reviews.innerText=elem.info.reviews;
+reviews.innerText="❤️"+elem.info.reviews;
 
 
 
@@ -493,7 +494,7 @@ title.innerText=elem.name
    var btndiv=document.createElement("div");
 
    var btn=document.createElement("button");
-   btn.innerText="Detail";
+   btn.innerText="$"+elem.price;
 
    btndiv.append(btn)
 
@@ -511,6 +512,7 @@ appdiv.append(div)
 var div=productdiv
 div.remove()
 console.log(prodArr)
+
 }
 
 
@@ -538,7 +540,7 @@ console.log(prodArr)
 
 
 var sortproductdiv=document.getElementById("sort_appenddiv")
-
+sortproductdiv.innerHTML=null
   
 
 
@@ -570,7 +572,7 @@ prodArr.map((elem)=>{
 
 
 var reviews=document.createElement("button");
-reviews.innerText=elem.info.reviews;
+reviews.innerText="❤️"+elem.info.reviews;
 
 
 
@@ -588,7 +590,7 @@ title.innerText=elem.name
    var btndiv=document.createElement("div");
 
    var btn=document.createElement("button");
-   btn.innerText="Detail";
+   btn.innerText="$"+elem.price;
 
    btndiv.append(btn)
 
@@ -632,7 +634,7 @@ console.log(prodArr)
 
 
 var sortproductdiv=document.getElementById("sort_appenddiv")
-
+sortproductdiv.innerHTML=null
   
 
 
@@ -652,6 +654,8 @@ sortproductdiv.append(appdiv)
 
 prodArr.map((elem)=>{
 
+  
+
   var div=document.createElement("div");
   div.setAttribute("class","appdiv")
 
@@ -664,7 +668,7 @@ prodArr.map((elem)=>{
 
 
 var reviews=document.createElement("button");
-reviews.innerText=elem.info.reviews;
+reviews.innerText="❤️"+elem.info.reviews;
 
 
 
@@ -682,7 +686,7 @@ title.innerText=elem.name
    var btndiv=document.createElement("div");
 
    var btn=document.createElement("button");
-   btn.innerText="Detail";
+   btn.innerText="$"+elem.price;
 
    btndiv.append(btn)
 

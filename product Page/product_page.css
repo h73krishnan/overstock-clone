@@ -891,7 +891,7 @@ padding: 5px;
     #search_input>input {
         border: 1px solid rgba(0, 0, 0, 0.267);
     
-        width: 80%;
+        width: 70%;
         height: 30px;
         position: relative;
         
@@ -997,7 +997,7 @@ padding: 5px;
         width: 80px;
         font-size: 10px;
         border-radius: 5px;
-        left: 690px;
+        left: 610px;
         height: 30px;
     
     }
@@ -1077,7 +1077,9 @@ padding: 5px;
         overflow-x:hidden;
         }
     
-        
+        #checkout_nav{
+            left: 620px;
+        }
 
 /* Dropdown Button */
 .dropbtn {
