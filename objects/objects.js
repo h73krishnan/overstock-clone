@@ -340,7 +340,50 @@ let prodArr = [
     desc: "Bring a touch of class into your kitchen with the Farberware 1.2 Cubic Foot 1100 Watt Large Microwave Oven with Grill Function in Stainless Stee",
     info: { reviews: 249, discount: 10, brand: "Farberware", availability: true, style: 'Oriental ' }
   },
-
+ {
+    name: "Medline Raised Toilet Seat with Lock and Arms",
+    imgArr: [
+      "https://bit.ly/3vWvxbf",
+      "https://bit.ly/3vF2R7O",
+      "https://bit.ly/3KDaPlS",
+      "https://bit.ly/3846CdH",
+      "https://bit.ly/39yhZet",
+    ],
+    ratings: "⭐️⭐️⭐️⭐️",
+    price: 40,
+    details:
+      "Stay relaxed and sleep soundly with the Beautyrest Luxury Quilted Mink Weighted Blanket. Designed for adults or those with a minimum body weight of 120lbs, this 60 x 70 inches weighted blanket distributes pressure on your body, touching pressure points to make you feel secure and relaxed...",
+    desc: "Stay relaxed and sleep soundly with the Beautyrest Luxury Quilted Mink Weighted Blanket",
+    info: {
+      reviews: 1000,
+      // discount: 30,
+      brand: "Waterford",
+      availability: true,
+      style: "Modern & Contemporary",
+    },
+  },
+  {
+    name: "LUCID Comfort Collection 10-inch Luxury Gel Memory Foam Mattress",
+    imgArr: [
+      "https://bit.ly/3LDFeC4",
+      "https://bit.ly/3kC5BMC",
+      "https://bit.ly/3OVCD8A",
+      "https://bit.ly/3Fb13WX",
+      "https://bit.ly/3kAeLt2",
+    ],
+    ratings: "⭐️⭐️⭐️⭐️⭐️",
+    price: 190,
+    details:
+      "With Lucid Comfort Collection, it's all about choice. That's why we give you three unique options so you can find the feel that makes you fall asleep happy. Choose from firm, medium, or plush designs—all in our most popular mattress profile of 10 inches....",
+    desc: "Stay relaxed and sleep soundly with the Beautyrest Luxury Quilted Mink Weighted Blanket",
+    info: {
+      reviews: 1000,
+      discount: 30,
+      brand: "Waterford",
+      availability: true,
+      style: "Modern & Contemporary",
+    },
+  },
 
 
 
@@ -376,6 +419,7 @@ let prodArr = [
 
   var productdiv=document.getElementById("append_products")
 
+  function productdom(){
 prodArr.map((elem)=>{
 
 
@@ -424,7 +468,7 @@ title.innerText=elem.name
 
 
 })
-
+  }
 
 
 var sortproductdiv=document.getElementById("sort_appenddiv")
