@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>address_page</title>
+    <link rel="stylesheet" href="./address.css">
+</head>
+<body>
+
+    <div id="container1">
+           <div>
+           
+             <img src="./screenshots/origional logo.PNG" alt="">
+           </div>
+        <div id="need_help">checkout</div>
+    </div>
+
+
+   <div id="address_form">
+      <h3>Add New Address</h3>
+      <form id="form_input" action="">
+          <input type="text" placeholder="Flat Number,Building Name,Street/Locality" name="" id="building_name"></br></br>
+          <input type="text" placeholder="Landmark (optional)" name="" id="Landmark"></br></br>
+          <input type="text" maxlength="6" id="pincode" placeholder="Pincode"></br></br>
+          <input type="text" id="locality" placeholder="Locality"></br></br>
+          <input type="text" id="city" placeholder="City"></br></br>
+          <input type="text" id="state" placeholder="State"></br></br>
+          <input type="text" id="name" placeholder="Customer Name"></br></br>
+          <input type="text" id="mobile" maxlength="10" placeholder="10 Digit Mobile Number"></br></br>
+          <div id="radio_btn">
+              <input name="add" type="radio"><label for="">HOME</label>
+              <input name="add" type="radio"><label for="">OFFICE</label>
+              <input name="add" type="radio"><label for="">OTHER</label>
+          </div></br>
+
+          
+          <div id="btns">
+              <button id="cancel_btn">CANCEL</button>
+              <button id="save_btn" onclick="saveAdd(event)">SAVE</button>
+          </div>
+      </form>
+   </div>
+
+
+
+
+
+</body>
+</html>
+
+
+<script src="./address.js"></script>
