@@ -807,7 +807,7 @@ inputdiv2.append(div)
             
             
         var img=document.createElement("img");
-        img.src=elem.img
+        img.src=elem.imga
 
         div.append(img)
         
