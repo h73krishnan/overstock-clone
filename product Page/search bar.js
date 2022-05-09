@@ -165,12 +165,7 @@ var saladimg=[
 
 searchbar.addEventListener("input", (e)=>{
 
-    inputdiv.style.display="block";
-    window.onkeyup=()=>{
-        if(event.keyCode==27){
-            inputdiv.style.display="none";
-        }
-    }
+    
 
     
     document.getElementById("appendsearch").innerHTML=null
@@ -179,7 +174,12 @@ searchbar.addEventListener("input", (e)=>{
         return char.btn.toLowerCase().includes(value)
         
     })
-    
+    inputdiv.style.display="block";
+    window.onkeyup=()=>{
+        if(event.keyCode==27){
+            inputdiv.style.display="none";
+        }
+    }
 
     arr.map((elem)=>{
        
@@ -201,10 +201,15 @@ searchbar.addEventListener("input", (e)=>{
 
     
 document.getElementById("dinner").addEventListener("click",()=>{
+    
     //inputdiv2
     var inputdiv2=document.getElementById("inputdiv2");
         inputdiv2.innerHTML=null
-
+window.onkeyup=()=>{
+        if(event.keyCode==27){
+            inputdiv2.style.display="none";
+        }
+    }
 var div=document.createElement("div");
 div.setAttribute("id","searchgrid");
 
@@ -212,6 +217,7 @@ div.setAttribute("id","searchgrid");
 inputdiv2.append(div)
 
     dinnerimg.map((elem=>{
+        
        
             
             
@@ -232,7 +238,11 @@ document.getElementById("melamine").addEventListener("click",()=>{
     //inputdiv2
     var inputdiv2=document.getElementById("inputdiv2");
         inputdiv2.innerHTML=null
-
+        window.onkeyup=()=>{
+            if(event.keyCode==27){
+                inputdiv2.style.display="none";
+            }
+        }
 var div=document.createElement("div");
 div.setAttribute("id","searchgrid");
 
@@ -260,9 +270,15 @@ inputdiv2.append(div)
 
     
 document.getElementById("salad").addEventListener("click",()=>{
+    
     //inputdiv2
     var inputdiv2=document.getElementById("inputdiv2");
         inputdiv2.innerHTML=null
+        window.onkeyup=()=>{
+            if(event.keyCode==27){
+                inputdiv2.style.display="none";
+            }
+        }
 
 var div=document.createElement("div");
 div.setAttribute("id","searchgrid");
