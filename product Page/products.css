@@ -144,12 +144,13 @@
     
     #append_products {
         display: grid;
-        width: 380px;
+        width: 480px;
         position: relative;
         bottom: 865px;
-        left: 265px;
-        grid-template-columns: 175px 175px;
+        left: 150px;
+        grid-template-columns: 225px 225px;
         gap: 20px;
+        
         
     }
     
@@ -248,7 +249,7 @@
         height: 30px;
         margin:5px;
         position: relative;
-        bottom: 0px;
+        bottom: 1305px;
         left: 180px;
         border-radius: 5px;
         
@@ -272,9 +273,9 @@
         display: grid;
         width: 380px;
         position: relative;
-        top: 0px;
+        top: -1300px;
         left: 0px;
-        grid-template-columns: 175px 175px;
+        grid-template-columns: 380px;
         gap: 20px;
         
     }
@@ -289,7 +290,7 @@
     
     
     #append_products>div>center>img {
-        width: 160px;
+        width: 300px;
         margin-top: 20px;
     
     }
@@ -301,14 +302,14 @@
         height: 30px;
         background: white;
         position: relative;
-        bottom: 180px;
+        bottom: 300px;
         left: 110px;
         border: 1px solid rgb(0, 0, 0);
         
     }
     
     #append_products>div>h5 {
-        font-size: 12px;
+        font-size: 20px;
         text-align: left;
         padding: 10px;
         height: 80px;
@@ -323,7 +324,7 @@
     }
     
     #append_products>div>p {
-        font-size: 11px;
+        font-size: 15px;
         text-align: left;
         padding: 10px;
         height: 80px;
@@ -338,7 +339,7 @@
         border: none;
         background: white;
         cursor: pointer;
-        font-size: 10px;
+        font-size: 20px;
         
         
         

@@ -667,6 +667,15 @@ padding: 5px;
 }
 
 
+#dropdiv>div>button>svg{
+    height: 20px;
+}
+
+#dropdiv>div>button>b{
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
 
 
 
@@ -1138,10 +1147,27 @@ padding: 5px;
     display: block;
 }
 
-#dropdiv{
-    border: 1px solid red;
-    width: 200px;
+
+
+#dropdiv>div>button>svg{
+    height: 20px;
 }
+
+#dropdiv>div>button>b{
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+}
+
+#dropdiv>hr{
+    width: 150px;
+}
+
+#drophr{
+    width: 150px;
+}
+    
+
 
 
 
@@ -1621,7 +1647,9 @@ padding: 5px;
 }
 
 
-
+#dropdiv{
+    visibility: hidden;
+}
 
 
 
