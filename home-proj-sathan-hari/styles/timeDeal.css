@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     font-family: sans-serif;
 }
@@ -12,6 +16,15 @@ body {
     line-height: 38px;
     color: #2f3337;
     text-align: center;
+}
+
+#fresh{
+    border: 2px solid red;
+    width: 100%;
+}
+#fresh img{
+    width: 80%;
+    border: 2px solid red;
 }
 
 #timemain {
