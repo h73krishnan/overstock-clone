@@ -1,3 +1,15 @@
+
+var info=localStorage.getItem("cartProducts");
+info=JSON.parse(info)
+let cartarr=info||[];
+
+var infow=localStorage.getItem("wishProducts");
+infow=JSON.parse(infow)
+let wisharr=infow||[];
+
+
+
+
 let prodArr = [
   {
     name: "Tournus 4-6-Person Extendable Solid Rubberwood Dining Table Set by iNSPIRE Q Classic",
@@ -393,6 +405,7 @@ prodArr.map((elem)=>{
 
 var reviews=document.createElement("button");
 reviews.innerText="❤️"+elem.info.reviews;
+reviews.setAttribute("id","review")
 
 
 
@@ -415,9 +428,32 @@ title.innerText=elem.name
    btndiv.append(btn)
 
 
+   var addtocart=document.createElement("button");
+   addtocart.innerText="Add To Cart";
+   addtocart.setAttribute("id","addtocart");
+   addtocart.onclick=()=>{
+
+     cartarr.push(elem)
+
+     localStorage.setItem("cartProducts",JSON.stringify(cartarr))
+  
+   }
+
+   
+   var addtowish=document.createElement("button");
+   addtowish.innerText="Add To Wishlist";
+   addtowish.setAttribute("id","addtowish");
+   addtowish.onclick=()=>{
+
+     wisharr.push(elem)
+
+     localStorage.setItem("wishProducts",JSON.stringify(wisharr))
+  
+   }
 
 
-  div.append(centerimg,reviews,title,rating,des,btndiv)
+
+  div.append(centerimg,reviews,title,rating,des,btndiv,addtocart,addtowish)
 
   productdiv.append(div)
 
@@ -499,10 +535,32 @@ title.innerText=elem.name
 
    btndiv.append(btn)
 
+   var addtocart=document.createElement("button");
+   addtocart.innerText="Add To Cart";
+   addtocart.setAttribute("id","addtocart");
+   addtocart.onclick=()=>{
+
+     cartarr.push(elem)
+
+     localStorage.setItem("cartProducts",JSON.stringify(cartarr))
+  
+   }
 
 
+   
+   var addtowish=document.createElement("button");
+   addtowish.innerText="Add To Wishlist";
+   addtowish.setAttribute("id","addtowish");
+   addtowish.onclick=()=>{
 
-  div.append(centerimg,reviews,title,rating,des,btndiv)
+     wisharr.push(elem)
+
+     localStorage.setItem("wishProducts",JSON.stringify(wisharr))
+  
+   }
+
+
+  div.append(centerimg,reviews,title,rating,des,btndiv,addtocart,addtowish)
 
 appdiv.append(div)
 
@@ -595,10 +653,32 @@ title.innerText=elem.name
 
    btndiv.append(btn)
 
+   var addtocart=document.createElement("button");
+   addtocart.innerText="Add To Cart";
+   addtocart.setAttribute("id","addtocart");
+   addtocart.onclick=()=>{
+
+     cartarr.push(elem)
+
+     localStorage.setItem("cartProducts",JSON.stringify(cartarr))
+  
+   }
+
+   
+   var addtowish=document.createElement("button");
+   addtowish.innerText="Add To Wishlist";
+   addtowish.setAttribute("id","addtowish");
+   addtowish.onclick=()=>{
+
+     wisharr.push(elem)
+
+     localStorage.setItem("wishProducts",JSON.stringify(wisharr))
+  
+   }
 
 
 
-  div.append(centerimg,reviews,title,rating,des,btndiv)
+  div.append(centerimg,reviews,title,rating,des,btndiv,addtocart,addtowish)
 
 appdiv.append(div)
 
@@ -691,10 +771,33 @@ title.innerText=elem.name
 
    btndiv.append(btn)
 
+   var addtocart=document.createElement("button");
+   addtocart.innerText="Add To Cart";
+   addtocart.setAttribute("id","addtocart");
+   addtocart.onclick=()=>{
+
+     cartarr.push(elem)
+
+     localStorage.setItem("cartProducts",JSON.stringify(cartarr))
+  
+   }
+
+
+   
+   var addtowish=document.createElement("button");
+   addtowish.innerText="Add To Wishlist";
+   addtowish.setAttribute("id","addtowish");
+   addtowish.onclick=()=>{
+
+     wisharr.push(elem)
+
+     localStorage.setItem("wishProducts",JSON.stringify(wisharr))
+  
+   }
 
 
 
-  div.append(centerimg,reviews,title,rating,des,btndiv)
+  div.append(centerimg,reviews,title,rating,des,btndiv,addtocart,addtowish)
 
 appdiv.append(div)
 
@@ -779,10 +882,34 @@ title.innerText=elem.name
 
    btndiv.append(btn)
 
+   var addtocart=document.createElement("button");
+   addtocart.innerText="Add To Cart";
+   addtocart.setAttribute("id","addtocart");
+   addtocart.onclick=()=>{
+
+     cartarr.push(elem)
+
+     localStorage.setItem("cartProducts",JSON.stringify(cartarr))
+  
+   }
 
 
 
-  div.append(centerimg,reviews,title,rating,des,btndiv)
+   
+   var addtowish=document.createElement("button");
+   addtowish.innerText="Add To Wishlist";
+   addtowish.setAttribute("id","addtowish");
+   addtowish.onclick=()=>{
+
+     wisharr.push(elem)
+
+     localStorage.setItem("wishProducts",JSON.stringify(wisharr))
+  
+   }
+
+
+
+  div.append(centerimg,reviews,title,rating,des,btndiv,addtocart,addtowish)
 
 appdiv.append(div)
 
