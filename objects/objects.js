@@ -704,3 +704,94 @@ appdiv.append(div)
 
 
 }
+
+
+
+
+
+
+
+function sortdiscount(){
+  
+  prodArr.sort((a, b) => {
+    a=a.info.discount;
+    
+    
+    b=b.info.discount;
+  
+    return a - b;
+});
+
+var sortproductdiv=document.getElementById("sort_appenddiv")
+sortproductdiv.innerHTML=null
+
+
+  
+
+
+var appdiv=document.createElement("div");
+appdiv.setAttribute("id","append_products");
+
+sortproductdiv.append(appdiv)
+
+
+
+
+
+
+
+
+
+
+prodArr.map((elem)=>{
+
+  var div=document.createElement("div");
+  div.setAttribute("class","appdiv")
+
+
+
+  var centerimg=document.createElement("center");
+  var img=document.createElement("img");
+  img.src=elem.img_url;
+  centerimg.append(img)
+
+
+var reviews=document.createElement("button");
+reviews.innerText="❤️"+elem.info.reviews;
+
+
+
+var title=document.createElement("h5");
+title.innerText=elem.name
+
+
+
+   var rating=document.createElement("div");
+   rating.innerText=elem.ratings;
+  
+   var des=document.createElement("p");
+   des.innerText=elem.desc;
+
+   var btndiv=document.createElement("div");
+
+   var btn=document.createElement("button");
+   btn.innerText="$"+elem.price;
+
+   btndiv.append(btn)
+
+
+
+
+  div.append(centerimg,reviews,title,rating,des,btndiv)
+
+appdiv.append(div)
+
+
+})
+
+
+var div=productdiv
+div.remove()
+console.log(prodArr)
+
+}
