@@ -1787,3 +1787,7 @@
     border:1px solid rgba(0, 0, 0, 0.096);
     z-index: 9;
 }
+
+body{
+    font-family: ‘Raleway’, sans-serif; 
+}
