@@ -15,11 +15,9 @@ img {vertical-align: middle;}
 #landingTop{
   display:flex;
   width: 100%;
-  border: 2px solid blue;
+ 
 }
-#landingTop > *{
-  border: 2px solid red;
-}
+
 #landingTop img{
   width: 100%;
 }
@@ -152,12 +150,6 @@ a{
   border: 2px solid black;
   display: grid;
   grid-template-columns: repeat(2,1fr);
-}
-#toCartSection{
-  border: 1px red;
-}
-#reviewSection{
-  border: 1px blue;
 }
 
 
